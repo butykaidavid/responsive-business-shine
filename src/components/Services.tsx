@@ -1,0 +1,141 @@
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { 
+  Home, 
+  Shield, 
+  Paintbrush, 
+  Hammer, 
+  Wrench, 
+  DoorOpen, 
+  Thermometer,
+  Building,
+  ArrowRight
+} from "lucide-react";
+
+const Services = () => {
+  const services = [
+    {
+      icon: Home,
+      title: "Lakás és ház felújítás",
+      description: "Teljes körű felújítási szolgáltatások lakások és házak számára, modern megoldásokkal.",
+      features: ["Teljes körű tervezés", "Minőségi kivitelezés", "Határidő betartása"]
+    },
+    {
+      icon: Shield,
+      title: "Szigetelés",
+      description: "Homlokzat, aljzat és padlásszigetelés energiahatékony megoldásokkal.",
+      features: ["Hőszigetelés", "Vízszigetelés", "Hangcsillapítás"]
+    },
+    {
+      icon: Paintbrush,
+      title: "Festés, glettelés",
+      description: "Professzionális festési és glettelési munkák beltéri és kültéri felületekre.",
+      features: ["Színtanácsadás", "Minőségi festékek", "Tiszta munkavégzés"]
+    },
+    {
+      icon: Hammer,
+      title: "Gipszkartonozás",
+      description: "Gipszkarton rendszerek építése, válaszfalak, álmennyezetek kialakítása.",
+      features: ["Gyors kivitelezés", "Precíz munka", "Dizájn megoldások"]
+    },
+    {
+      icon: Wrench,
+      title: "Kőműves munkák",
+      description: "Falazás, burkolás, javítási munkák szakszerű kivitelezésben.",
+      features: ["Tapasztalt mesterek", "Tartós megoldások", "Pontos kivitelezés"]
+    },
+    {
+      icon: DoorOpen,
+      title: "Nyílászáró csere",
+      description: "Ablakok és ajtók cseréje, beépítése energiahatékony megoldásokkal.",
+      features: ["Energiahatékonyság", "Szakszerű beépítés", "Garancia"]
+    },
+    {
+      icon: Thermometer,
+      title: "Hideg, meleg burkolás",
+      description: "Csempe, járólap és egyéb burkolóanyagok szakszerű fektetése.",
+      features: ["Vízhatlan kivitelezés", "Esztétikus megjelenés", "Tartósság"]
+    },
+    {
+      icon: Building,
+      title: "Könnyűszerkezetes építés",
+      description: "Garázsok, filagóriák, melléképületek építése modern technológiával.",
+      features: ["Gyors építés", "Költséghatékonyság", "Egyedi tervezés"]
+    }
+  ];
+
+  return (
+    <section id="services" className="py-20 bg-gray-50">
+      <div className="container mx-auto px-4">
+        {/* Section Header */}
+        <div className="text-center mb-16 animate-fade-in">
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+            Szolgáltatásaink
+          </h2>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            Teljes körű építőipari szolgáltatások egy helyen. Tapasztalt szakembereink 
+            garantálják a minőségi munkavégzést és a pontos határidő betartását.
+          </p>
+        </div>
+
+        {/* Services Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-12">
+          {services.map((service, index) => (
+            <Card 
+              key={index} 
+              className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1 bg-background border-0 shadow-md"
+            >
+              <CardHeader className="pb-4">
+                <div className="mb-4">
+                  <div className="inline-flex items-center justify-center w-12 h-12 bg-primary/10 rounded-lg group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300">
+                    <service.icon className="h-6 w-6 text-primary group-hover:text-primary-foreground" />
+                  </div>
+                </div>
+                <CardTitle className="text-lg font-bold text-foreground group-hover:text-primary transition-colors">
+                  {service.title}
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="pt-0">
+                <p className="text-muted-foreground mb-4 text-sm leading-relaxed">
+                  {service.description}
+                </p>
+                <ul className="space-y-2">
+                  {service.features.map((feature, featureIndex) => (
+                    <li key={featureIndex} className="flex items-center space-x-2 text-sm">
+                      <div className="w-1.5 h-1.5 bg-primary rounded-full flex-shrink-0"></div>
+                      <span className="text-muted-foreground">{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+
+        {/* CTA Section */}
+        <div className="text-center animate-slide-up">
+          <div className="bg-gradient-primary text-white rounded-2xl p-8 md:p-12 shadow-xl">
+            <h3 className="text-2xl md:text-3xl font-bold mb-4">
+              Kezdjük el közösen a projektjét!
+            </h3>
+            <p className="text-lg opacity-90 mb-6 max-w-2xl mx-auto">
+              Ingyenes helyszíni felmérés és árajánlat. Tapasztalt szakembereink 
+              segítenek megvalósítani álmai otthonát.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button variant="outline" size="lg" className="bg-white/20 border-white/30 text-white hover:bg-white hover:text-primary">
+                Ingyenes felmérés
+                <ArrowRight className="h-5 w-5 ml-2" />
+              </Button>
+              <Button variant="outline" size="lg" className="bg-transparent border-white/30 text-white hover:bg-white hover:text-primary">
+                Telefonos egyeztetés
+              </Button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Services;
