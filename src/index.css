@@ -54,22 +54,32 @@ All colors MUST be HSL.
     --gray-800: 217 33% 17%;
     --gray-900: 222 84% 5%;
 
-    /* Gradients */
+    /* Advanced Gradients */
     --gradient-primary: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--primary-light)) 100%);
-    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--primary-dark)) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary-dark)) 0%, hsl(var(--primary)) 50%, hsl(var(--primary-light)) 100%);
     --gradient-card: linear-gradient(145deg, hsl(var(--background)) 0%, hsl(var(--gray-50)) 100%);
+    --gradient-glass: linear-gradient(145deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%);
+    --gradient-mesh: radial-gradient(circle at 20% 80%, hsl(var(--primary) / 0.15) 0%, transparent 50%), 
+                     radial-gradient(circle at 80% 20%, hsl(var(--primary-light) / 0.15) 0%, transparent 50%),
+                     radial-gradient(circle at 40% 40%, hsl(var(--primary-dark) / 0.1) 0%, transparent 50%);
 
-    /* Shadows */
+    /* Advanced Shadows */
     --shadow-sm: 0 1px 2px 0 hsl(var(--gray-900) / 0.05);
     --shadow: 0 1px 3px 0 hsl(var(--gray-900) / 0.1), 0 1px 2px -1px hsl(var(--gray-900) / 0.1);
     --shadow-md: 0 4px 6px -1px hsl(var(--gray-900) / 0.1), 0 2px 4px -2px hsl(var(--gray-900) / 0.1);
     --shadow-lg: 0 10px 15px -3px hsl(var(--gray-900) / 0.1), 0 4px 6px -4px hsl(var(--gray-900) / 0.1);
     --shadow-xl: 0 20px 25px -5px hsl(var(--gray-900) / 0.1), 0 8px 10px -6px hsl(var(--gray-900) / 0.1);
-    --shadow-primary: 0 10px 30px -10px hsl(var(--primary) / 0.3);
+    --shadow-2xl: 0 25px 50px -12px hsl(var(--gray-900) / 0.25);
+    --shadow-primary: 0 10px 30px -10px hsl(var(--primary) / 0.4);
+    --shadow-primary-lg: 0 20px 40px -10px hsl(var(--primary) / 0.3);
+    --shadow-glow: 0 0 40px hsl(var(--primary) / 0.2);
+    --shadow-glass: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
 
-    /* Transitions */
+    /* Advanced Transitions */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    --transition-bounce: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    --transition-elastic: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    --transition-spring: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
 
     --sidebar-background: 0 0% 98%;
 
@@ -134,5 +144,66 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Glass morphism utilities */
+  .glass {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .glass-dark {
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  /* Animated background patterns */
+  .mesh-gradient {
+    background: var(--gradient-mesh);
+    background-size: 400% 400%;
+    animation: meshMove 20s ease infinite;
+  }
+
+  @keyframes meshMove {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+  }
+
+  /* Hover effects */
+  .hover-lift {
+    transition: var(--transition-smooth);
+  }
+
+  .hover-lift:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: var(--shadow-2xl);
+  }
+
+  .hover-glow:hover {
+    box-shadow: var(--shadow-glow);
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: hsl(var(--gray-100));
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: hsl(var(--primary));
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--primary-dark));
   }
 }
