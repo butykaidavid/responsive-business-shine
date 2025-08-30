@@ -133,13 +133,17 @@ const Services = () => {
                 segítenek megvalósítani álmai otthonát.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center animate-scale-in" style={{ animationDelay: '400ms' }}>
+              <a href="#contact">
                 <Button variant="outline" size="lg" className="bg-white/20 border-white/30 text-white hover:bg-white hover:text-primary transition-all duration-300 hover:scale-105 shadow-lg">
                   Ingyenes felmérés
                   <ArrowRight className="h-5 w-5 ml-2" />
                 </Button>
+              </a>
+              <a href="tel:+36306616016">
                 <Button variant="outline" size="lg" className="bg-transparent border-white/30 text-white hover:bg-white hover:text-primary transition-all duration-300 hover:scale-105">
                   Telefonos egyeztetés
                 </Button>
+              </a>
               </div>
             </div>
           </div>

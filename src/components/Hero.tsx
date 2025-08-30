@@ -70,13 +70,17 @@ const Hero = () => {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 animate-scale-in" style={{ animationDelay: '2900ms' }}>
-              <Button variant="hero" size="lg" className="group shadow-2xl hover:shadow-glow transform hover:scale-105 transition-all duration-500">
-                Ingyenes ajánlat
-                <ArrowRight className="h-5 w-5 group-hover:translate-x-2 transition-transform duration-300" />
-              </Button>
-              <Button variant="outline" size="lg" className="glass hover:bg-primary hover:text-primary-foreground border-primary/30 hover:border-primary transition-all duration-300">
-                Szolgáltatások
-              </Button>
+              <a href="#contact">
+                <Button variant="hero" size="lg" className="group shadow-2xl hover:shadow-glow transform hover:scale-105 transition-all duration-500">
+                  Ingyenes ajánlat
+                  <ArrowRight className="h-5 w-5 group-hover:translate-x-2 transition-transform duration-300" />
+                </Button>
+              </a>
+              <a href="#services">
+                <Button variant="outline" size="lg" className="glass hover:bg-primary hover:text-primary-foreground border-primary/30 hover:border-primary transition-all duration-300">
+                  Szolgáltatások
+                </Button>
+              </a>
             </div>
 
             {/* Contact Info */}

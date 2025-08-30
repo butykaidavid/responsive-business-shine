@@ -11,11 +11,11 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="space-y-4">
-            <div className="flex items-center space-x-2">
+            <div className="flex items-center space-x-0.5">
               <div className="bg-primary text-primary-foreground px-3 py-1 rounded-lg font-bold text-xl">
                 Bau
               </div>
-              <span className="text-xl font-bold">hub</span>
+              <span className="text-xl font-bold">Hub</span>
             </div>
             <p className="text-gray-300 leading-relaxed">
               Professzionális építőipari szolgáltatások lakások és házak felújításához. 
@@ -88,15 +88,8 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
                 <div>
-                  <p className="text-gray-300">Budapest és környéke</p>
-                  <p className="text-sm text-gray-400">50 km-es körzetben</p>
-                </div>
-              </div>
-              <div className="flex items-center space-x-3">
-                <Clock className="h-5 w-5 text-primary flex-shrink-0" />
-                <div>
-                  <p className="text-gray-300">Hétfő - Péntek</p>
-                  <p className="text-sm text-gray-400">8:00 - 18:00</p>
+                  <p className="text-gray-300">Borsod-Abaúj-Zemplén Vármegye</p>
+                  <p className="text-sm text-gray-400">Teljes területen</p>
                 </div>
               </div>
             </div>
@@ -124,9 +117,11 @@ const Footer = () => {
             </ul>
             
             <div className="pt-4">
-              <Button variant="cta" size="sm" className="w-full">
-                Ingyenes ajánlat
-              </Button>
+              <a href="#contact">
+                <Button variant="cta" size="sm" className="w-full">
+                  Ingyenes ajánlat
+                </Button>
+              </a>
             </div>
           </div>
         </div>
@@ -138,6 +133,9 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-sm text-gray-400 text-center md:text-left">
               <p>© {currentYear} BauHub. Minden jog fenntartva.</p>
+              <p className="mt-1">
+                Tartalmi hibák előfordulhatnak, az ebből okozott károkért felelősséget nem vállalunk.
+              </p>
               <p className="mt-1">
                 Készítette: <span className="text-primary font-medium">Professzionális webfejlesztés</span>
               </p>

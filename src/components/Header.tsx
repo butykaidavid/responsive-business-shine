@@ -19,11 +19,11 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex items-center space-x-1 group cursor-pointer">
+          <div className="flex items-center space-x-0.5 group cursor-pointer">
             <div className="bg-gradient-primary text-primary-foreground px-3 py-1.5 rounded-xl font-bold text-xl shadow-lg group-hover:shadow-primary-lg transition-all duration-300 transform group-hover:scale-105">
               Bau
             </div>
-            <span className="text-xl font-bold text-foreground group-hover:text-primary transition-colors duration-300">hub</span>
+            <span className="text-xl font-bold text-foreground group-hover:text-primary transition-colors duration-300">Hub</span>
           </div>
 
           {/* Desktop Navigation */}
@@ -42,13 +42,15 @@ const Header = () => {
 
           {/* Contact Info & CTA */}
           <div className="hidden lg:flex items-center space-x-4">
-            <div className="flex items-center space-x-2 text-sm text-muted-foreground hover:text-primary transition-colors duration-300">
+            <a href="tel:+36306616016" className="flex items-center space-x-2 text-sm text-muted-foreground hover:text-primary transition-colors duration-300">
               <Phone className="h-4 w-4" />
               <span>06 30/661 6016</span>
-            </div>
-            <Button variant="cta" size="sm" className="shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
-              Ajánlat kérés
-            </Button>
+            </a>
+            <a href="#contact">
+              <Button variant="cta" size="sm" className="shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                Ajánlat kérés
+              </Button>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -80,17 +82,19 @@ const Header = () => {
                 </a>
               ))}
               <div className="pt-4 border-t flex flex-col space-y-3">
-                <div className="flex items-center space-x-2 text-sm text-muted-foreground">
+                <a href="tel:+36306616016" className="flex items-center space-x-2 text-sm text-muted-foreground hover:text-primary transition-colors">
                   <Phone className="h-4 w-4" />
                   <span>06 30/661 6016</span>
-                </div>
+                </a>
                 <div className="flex items-center space-x-2 text-sm text-muted-foreground">
                   <Mail className="h-4 w-4" />
                   <span>info@bauhub.hu</span>
                 </div>
-                <Button variant="cta" size="sm" className="w-fit">
-                  Ajánlat kérés
-                </Button>
+                <a href="#contact">
+                  <Button variant="cta" size="sm" className="w-fit">
+                    Ajánlat kérés
+                  </Button>
+                </a>
               </div>
             </nav>
           </div>

@@ -32,15 +32,8 @@ const Contact = () => {
     {
       icon: MapPin,
       title: "Szolgáltatási terület",
-      content: "Budapest és környéke",
-      description: "50 km-es körzetben",
-      action: null
-    },
-    {
-      icon: Clock,
-      title: "Munkaidő",
-      content: "Hétfő - Péntek",
-      description: "8:00 - 18:00",
+      content: "Borsod-Abaúj-Zemplén Vármegye",
+      description: "Teljes területen",
       action: null
     }
   ];
@@ -161,7 +154,7 @@ const Contact = () => {
           {/* Contact Information */}
           <div className="space-y-6 animate-fade-in">
             {/* Contact Cards */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {contactInfo.map((info, index) => (
                 <Card 
                   key={index} 
@@ -220,14 +213,16 @@ const Contact = () => {
                 <Phone className="h-8 w-8 mx-auto mb-4" />
                 <h3 className="text-lg font-bold mb-2">Azonnali segítségre van szüksége?</h3>
                 <p className="mb-4 opacity-90">Hívjon most, és még ma megbeszéljük a részleteket!</p>
-                <Button 
-                  variant="outline" 
-                  size="lg" 
-                  className="bg-white/20 border-white/30 text-white hover:bg-white hover:text-primary"
-                >
-                  <Phone className="h-5 w-5 mr-2" />
-                  06 30/661 6016
-                </Button>
+                <a href="tel:+36306616016">
+                  <Button 
+                    variant="outline" 
+                    size="lg" 
+                    className="bg-white/20 border-white/30 text-white hover:bg-white hover:text-primary"
+                  >
+                    <Phone className="h-5 w-5 mr-2" />
+                    06 30/661 6016
+                  </Button>
+                </a>
               </CardContent>
             </Card>
           </div>
