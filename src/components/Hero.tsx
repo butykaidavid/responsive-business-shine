@@ -35,7 +35,7 @@ const Hero = () => {
             </div>
 
             {/* Main Headline */}
-            <div className="mt-8">
+            <div className="mt-16">
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 leading-tight">
                 <span className="bg-gradient-to-r from-primary via-primary-dark to-primary bg-clip-text text-transparent animate-gradient">
                   Álmai Otthona
