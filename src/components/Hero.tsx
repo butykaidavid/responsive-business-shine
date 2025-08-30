@@ -46,8 +46,7 @@ const Hero = () => {
                 </span>
               </h1>
               <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed max-w-2xl">
-                <strong className="text-primary">Professzionális építőipari szolgáltatások</strong> 
-                lakások és házak teljes körű felújításához.
+                <strong className="text-primary">Professzionális építőipari szolgáltatások</strong> lakások és házak teljes körű felújításához.
                 <span className="block mt-3 text-lg">
                   🎯 <strong>Ingyenes felmérés</strong> • 
                   ⚡ <strong>Gyors kezdés</strong> • 
