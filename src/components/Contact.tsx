@@ -154,7 +154,7 @@ const Contact = () => {
           {/* Contact Information */}
           <div className="space-y-6 animate-fade-in">
             {/* Contact Cards */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 gap-6">
               {contactInfo.map((info, index) => (
                 <Card 
                   key={index} 
@@ -162,15 +162,15 @@ const Contact = () => {
                   onClick={() => info.action && window.open(info.action, '_self')}
                 >
                   <CardContent className="p-6">
-                    <div className="flex items-start space-x-4">
-                      <div className="inline-flex items-center justify-center w-12 h-12 bg-primary/10 rounded-lg group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300">
-                        <info.icon className="h-6 w-6 text-primary group-hover:text-primary-foreground" />
+                    <div className="flex items-center space-x-4">
+                      <div className="inline-flex items-center justify-center w-14 h-14 bg-primary/10 rounded-xl group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300">
+                        <info.icon className="h-7 w-7 text-primary group-hover:text-primary-foreground" />
                       </div>
                       <div className="flex-1">
-                        <h3 className="font-bold text-foreground mb-1">
+                        <h3 className="font-bold text-foreground mb-2 text-lg">
                           {info.title}
                         </h3>
-                        <p className="text-foreground font-medium mb-1">
+                        <p className="text-foreground font-medium mb-2 text-base">
                           {info.content}
                         </p>
                         <p className="text-sm text-muted-foreground">

@@ -35,7 +35,7 @@ const Hero = () => {
             </div>
 
             {/* Main Headline */}
-            <div>
+            <div className="mt-8">
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 leading-tight">
                 <span className="bg-gradient-to-r from-primary via-primary-dark to-primary bg-clip-text text-transparent animate-gradient">
                   Álmai Otthona
@@ -47,7 +47,7 @@ const Hero = () => {
               </h1>
               <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed max-w-2xl">
                 <strong className="text-primary">Professzionális építőipari szolgáltatások</strong> 
-                lakások és házak teljes körű felújításához. 
+                lakások és házak teljes körű felújításához.
                 <span className="block mt-3 text-lg">
                   🎯 <strong>Ingyenes felmérés</strong> • 
                   ⚡ <strong>Gyors kezdés</strong> • 
