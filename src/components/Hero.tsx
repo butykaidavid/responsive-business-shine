@@ -1,126 +1,142 @@
+
 import { Button } from "@/components/ui/button";
-import { ArrowRight, CheckCircle, Star } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
+import { ArrowRight, Star, Shield, Clock, Users } from "lucide-react";
 import heroImage from "@/assets/hero-construction.jpg";
 
 const Hero = () => {
   return (
-    <section id="home" className="relative min-h-screen flex items-center overflow-hidden mesh-gradient">
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-background via-primary/5 to-background">
       {/* Animated Background Elements */}
-      <div className="absolute inset-0 z-0">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-primary/20 rounded-full blur-3xl animate-float"></div>
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-primary-light/15 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }}></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-primary opacity-5 rounded-full blur-3xl animate-pulse-glow"></div>
-      </div>
-      {/* Hero Image with Parallax Effect */}
-      <div className="absolute inset-0 z-10 opacity-8">
-        <img
-          src={heroImage}
-          alt="BauHub építőipari szolgáltatások"
-          className="w-full h-full object-cover transform scale-110 animate-fade-in"
-          style={{ transform: 'scale(1.1) translateZ(0)' }}
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/90 to-background/70"></div>
+      <div className="absolute inset-0">
+        <div className="absolute top-20 left-20 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-float opacity-70"></div>
+        <div className="absolute bottom-32 right-32 w-80 h-80 bg-primary-light/15 rounded-full blur-3xl animate-float opacity-60" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-mesh opacity-20 rounded-full blur-3xl animate-float" style={{ animationDelay: '4s' }}></div>
       </div>
 
-      {/* Content */}
-      <div className="container mx-auto px-4 relative z-20 pt-20">
+      <div className="container mx-auto px-4 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Left Column - Text Content */}
-          <div className="animate-fade-in-up space-y-8" style={{ animationDelay: '300ms' }}>
-            <div className="flex items-center space-x-2 mb-6 animate-scale-in" style={{ animationDelay: '600ms' }}>
-              <div className="flex items-center space-x-1">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="h-5 w-5 fill-warning text-warning transform hover:scale-125 transition-transform duration-300" style={{ animationDelay: `${800 + i * 100}ms` }} />
-                ))}
-              </div>
-              <span className="text-sm text-muted-foreground font-medium">
-                5.0 értékelés • 200+ elégedett ügyfél
-              </span>
+          {/* Left Column - Content */}
+          <div className="space-y-8 animate-fade-in-up">
+            {/* Trust Badges */}
+            <div className="flex flex-wrap gap-3 mb-6">
+              <Badge variant="outline" className="bg-primary/10 border-primary/20 text-primary px-4 py-2 hover:scale-105 transition-transform">
+                <Star className="h-4 w-4 mr-2 fill-current" />
+                5.0 ⭐ Értékelés
+              </Badge>
+              <Badge variant="outline" className="bg-green-50 border-green-200 text-green-700 px-4 py-2 hover:scale-105 transition-transform">
+                <Shield className="h-4 w-4 mr-2" />
+                15+ Év Tapasztalat
+              </Badge>
+              <Badge variant="outline" className="bg-blue-50 border-blue-200 text-blue-700 px-4 py-2 hover:scale-105 transition-transform">
+                <Users className="h-4 w-4 mr-2" />
+                200+ Ügyfél
+              </Badge>
             </div>
 
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight animate-slide-up" style={{ animationDelay: '900ms' }}>
-              Az otthonod
-              <span className="text-transparent bg-gradient-primary bg-clip-text block animate-shimmer" style={{ 
-                backgroundSize: '200% 100%',
-                animationDelay: '1200ms'
-              }}>
-                új színt emelük
-              </span>
-            </h1>
-
-            <p className="text-lg text-muted-foreground mb-8 leading-relaxed max-w-lg animate-fade-in-up" style={{ animationDelay: '1500ms' }}>
-              Professzionális építőipari szolgáltatások lakások és házak felújításához. 
-              Minőségi munkavégzés, megbízható határidők, versenyképes árak.
-            </p>
+            {/* Main Headline */}
+            <div>
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 leading-tight">
+                <span className="bg-gradient-to-r from-primary via-primary-dark to-primary bg-clip-text text-transparent animate-gradient">
+                  Álmai Otthona
+                </span>
+                <br />
+                <span className="text-foreground">
+                  Vár Önre! 🏠✨
+                </span>
+              </h1>
+              <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed max-w-2xl">
+                <strong className="text-primary">Professzionális építőipari szolgáltatások</strong> 
+                lakások és házak teljes körű felújításához. 
+                <span className="block mt-3 text-lg">
+                  🎯 <strong>Ingyenes felmérés</strong> • 
+                  ⚡ <strong>Gyors kezdés</strong> • 
+                  🏆 <strong>Garantált minőség</strong>
+                </span>
+              </p>
+            </div>
 
             {/* Key Benefits */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8 animate-fade-in-up" style={{ animationDelay: '1800ms' }}>
-              {[
-                "Ingyenes helyszíni felmérés",
-                "Garanciális kötelezettség",
-                "Gyors és tiszta munkavégzés",
-                "Versenyképes árak"
-              ].map((benefit, index) => (
-                <div key={index} className="flex items-center space-x-3 group hover-lift" style={{ animationDelay: `${2100 + index * 200}ms` }}>
-                  <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 group-hover:scale-110 transition-transform duration-300" />
-                  <span className="text-foreground font-medium group-hover:text-primary transition-colors duration-300">{benefit}</span>
-                </div>
-              ))}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-8">
+              <div className="bg-white/70 backdrop-blur-sm rounded-xl p-4 border border-primary/10 hover:shadow-lg transition-all duration-300 hover:scale-105">
+                <Clock className="h-8 w-8 text-primary mb-2" />
+                <h3 className="font-bold text-sm text-foreground">Pontos Határidő</h3>
+                <p className="text-xs text-muted-foreground">Minden projektet időben</p>
+              </div>
+              <div className="bg-white/70 backdrop-blur-sm rounded-xl p-4 border border-primary/10 hover:shadow-lg transition-all duration-300 hover:scale-105">
+                <Shield className="h-8 w-8 text-primary mb-2" />
+                <h3 className="font-bold text-sm text-foreground">Garancia</h3>
+                <p className="text-xs text-muted-foreground">Hosszú távú védelem</p>
+              </div>
+              <div className="bg-white/70 backdrop-blur-sm rounded-xl p-4 border border-primary/10 hover:shadow-lg transition-all duration-300 hover:scale-105">
+                <Star className="h-8 w-8 text-primary mb-2" />
+                <h3 className="font-bold text-sm text-foreground">Prémium Anyagok</h3>
+                <p className="text-xs text-muted-foreground">Csak a legjobb minőség</p>
+              </div>
             </div>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 animate-scale-in" style={{ animationDelay: '2900ms' }}>
+            <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <a href="#contact">
-                <Button variant="hero" size="lg" className="group shadow-2xl hover:shadow-glow transform hover:scale-105 transition-all duration-500">
-                  Ingyenes ajánlat
-                  <ArrowRight className="h-5 w-5 group-hover:translate-x-2 transition-transform duration-300" />
+                <Button 
+                  variant="hero" 
+                  size="lg" 
+                  className="group text-lg px-8 py-4 shadow-2xl hover:shadow-glow transition-all duration-500"
+                >
+                  🎯 Ingyenes Felmérés
+                  <ArrowRight className="h-5 w-5 ml-2 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </a>
-              <a href="#services">
-                <Button variant="outline" size="lg" className="glass hover:bg-primary hover:text-primary-foreground border-primary/30 hover:border-primary transition-all duration-300">
-                  Szolgáltatások
+              <a href="tel:+36306616016">
+                <Button 
+                  variant="outline" 
+                  size="lg" 
+                  className="text-lg px-8 py-4 hover:scale-105 transition-all duration-300"
+                >
+                  📞 06 30/661 6016
                 </Button>
               </a>
             </div>
 
-            {/* Contact Info */}
-            <div className="mt-8 pt-8 border-t border-primary/20 animate-fade-in-up" style={{ animationDelay: '3200ms' }}>
-              <p className="text-sm text-muted-foreground mb-2">Hívjon most:</p>
-              <a 
-                href="tel:+36306616016" 
-                className="text-2xl font-bold text-primary hover:text-primary-dark transition-all duration-300 transform hover:scale-105 inline-block hover:animate-pulse-glow"
-              >
-                06 30/661 6016
-              </a>
+            {/* Social Proof */}
+            <div className="pt-6 border-t border-primary/10">
+              <p className="text-sm text-muted-foreground mb-3">
+                <strong>Legutóbbi ügyfeleinktől:</strong>
+              </p>
+              <div className="space-y-2">
+                <p className="text-sm italic text-muted-foreground">
+                  💬 "Pontosan határidőre készültek el, gyönyörű lett a lakásunk!" - Kovács Anna
+                </p>
+                <p className="text-sm italic text-muted-foreground">
+                  💬 "Professzionális csapat, csak ajánlani tudom!" - Nagy Péter
+                </p>
+              </div>
             </div>
           </div>
 
-          {/* Right Column - Visual Element */}
-          <div className="relative animate-fade-in-up" style={{ animationDelay: '1000ms' }}>
-            <div className="absolute -top-8 -left-8 w-72 h-72 bg-primary/10 rounded-full blur-3xl animate-float"></div>
-            <div className="absolute -bottom-8 -right-8 w-96 h-96 bg-primary-light/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '3s' }}></div>
-            
-            <div className="relative glass rounded-3xl p-8 shadow-glass hover:shadow-2xl transition-all duration-500 border border-primary/20 hover-lift backdrop-blur-xl">
-              <div className="absolute inset-0 bg-gradient-glass rounded-3xl"></div>
-              <div className="relative z-10">
-              <h3 className="text-xl font-bold text-foreground mb-6 flex items-center">
-                <span className="w-2 h-2 bg-primary rounded-full mr-3 animate-pulse"></span>
-                Miért válasszon minket?
-              </h3>
+          {/* Right Column - Image */}
+          <div className="relative animate-fade-in-up" style={{ animationDelay: '300ms' }}>
+            <div className="relative group">
+              <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-primary-dark/20 rounded-3xl blur-2xl group-hover:blur-3xl transition-all duration-500 opacity-70"></div>
+              <img
+                src={heroImage}
+                alt="Professzionális építőipari szolgáltatások"
+                className="relative rounded-3xl shadow-2xl w-full max-w-lg mx-auto group-hover:scale-105 transition-all duration-700 hover:shadow-glow"
+              />
               
-              <div className="space-y-4">
-                {[
-                  { number: "15+", label: "Év tapasztalat" },
-                  { number: "200+", label: "Befejezett projekt" },
-                  { number: "100%", label: "Elégedett ügyfelek" },
-                  { number: "24h", label: "Gyors válaszidő" }
-                ].map((stat, index) => (
-                  <div key={index} className="flex items-center justify-between py-3 border-b border-primary/10 last:border-b-0 group hover:bg-primary/5 rounded-lg px-3 transition-all duration-300" style={{ animationDelay: `${1500 + index * 200}ms` }}>
-                    <span className="text-muted-foreground font-medium group-hover:text-primary transition-colors duration-300">{stat.label}</span>
-                    <span className="text-2xl font-bold text-primary group-hover:scale-110 transition-transform duration-300">{stat.number}</span>
-                  </div>
-                ))}
+              {/* Floating Stats */}
+              <div className="absolute -top-4 -left-4 bg-white/90 backdrop-blur-sm rounded-2xl p-4 shadow-xl animate-float">
+                <div className="text-center">
+                  <div className="text-2xl font-bold text-primary">15+</div>
+                  <div className="text-xs text-muted-foreground">Év Tapasztalat</div>
+                </div>
               </div>
+              
+              <div className="absolute -bottom-4 -right-4 bg-white/90 backdrop-blur-sm rounded-2xl p-4 shadow-xl animate-float" style={{ animationDelay: '2s' }}>
+                <div className="text-center">
+                  <div className="text-2xl font-bold text-primary">200+</div>
+                  <div className="text-xs text-muted-foreground">Elégedett Ügyfél</div>
+                </div>
               </div>
             </div>
           </div>
@@ -128,8 +144,8 @@ const Hero = () => {
       </div>
 
       {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce z-30">
-        <div className="w-6 h-10 border-2 border-primary rounded-full flex justify-center hover:border-primary-light transition-colors duration-300 glass">
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+        <div className="w-6 h-10 border-2 border-primary/30 rounded-full flex justify-center">
           <div className="w-1 h-3 bg-primary rounded-full mt-2 animate-pulse"></div>
         </div>
       </div>
