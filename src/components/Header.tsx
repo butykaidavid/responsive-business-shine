@@ -11,6 +11,7 @@ const Header = () => {
     { label: "Főoldal", href: "#home" },
     { label: "Szolgáltatások", href: "#services" },
     { label: "Galéria", href: "#gallery" },
+    { label: "Blog", href: "/blog" },
     { label: "Kapcsolat", href: "#contact" },
   ];
 
