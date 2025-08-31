@@ -8,113 +8,148 @@ const Blog = () => {
   const blogPosts = [
     {
       id: 1,
-      title: "Homlokzati hőszigetelés: ETICS rendszerek előnyei",
-      excerpt: "Miért válasszuk az ETICS (külső kompozit hőszigetelő rendszer) megoldást? Minden tudnivaló a hatékony homlokzati szigetelésről.",
-      content: `Az ETICS (External Thermal Insulation Composite System) rendszer ma az egyik legnépszerűbb homlokzati hőszigetelési megoldás. 
+      title: "ETICS homlokzati hőszigetelés 2024: Teljes útmutató a modern energiatakarékossághoz",
+      excerpt: "Minden tudnivaló az ETICS (külső kompozit hőszigetelő) rendszerről, amely akár 50%-kal csökkentheti energiaköltségeit. Szakmai kivitelezési tippek és költségkalkuláció.",
+      content: `Az ETICS (External Thermal Insulation Composite System) rendszer ma Európa vezető homlokzati hőszigetelési technológiája, amely forradalmasította az energiahatékony építkezést.
 
-      **Miért érdemes választani?**
-      
-      • **Energiatakarékosság**: Akár 40-50%-kal csökkentheti a fűtési költségeket
-      • **Hőhidak megszüntetése**: Folyamatos szigetelőréteg a teljes homlokzaton
-      • **Páradiffúzió**: A rendszer lélegzik, nem gyűlik fel a nedvesség
-      • **Esztétikai megjelenés**: Sokféle színben és textúrában elérhető
-      
-      **Alkalmazási területek:**
-      
-      Családi házak, társasházak, irodaépületek homlokzatán egyaránt alkalmazható. Különösen ajánlott régi épületek felújításánál, ahol a belső szigetelés nem megoldható.
-      
-      **Szakszerű kivitelezés kulcsfontosságú**: A rendszer csak megfelelő alapozás és időjárás-független kivitelezés mellett biztosítja a hosszú távú hatékonyságot.`,
-      category: "Szigetelés",
+**Mi az ETICS rendszer?**
+
+Az ETICS egy többrétegű hőszigetelő rendszer, amely a homlokzat külső felületére kerül. A rendszer alapja a hőszigetelő anyag (általában EPS, XPS vagy kőzetgyapot), amelyet speciális ragasztóval rögzítenek a falra, majd dűbelekkel mechanikusan rögzítenek.
+
+**A rendszer felépítése:**
+1. Alapozóréteg: Speciális ragasztó
+2. Hőszigetelő réteg: 8-20 cm vastag szigetelőanyag  
+3. Mechanikai rögzítés: Műanyag vagy fém dűbelek
+4. Felvértezett alapozóréteg: Üvegszövet háló és alapozó
+5. Díszítő vakolat: Színes és textúrált felületi réteg
+
+**Energiahatékonysági előnyök:**
+• Fűtési költség csökkentés: 40-60%-os energia megtakarítás lehetséges
+• Hőhidak kiküszöbölése: Folyamatos szigetelőréteg a teljes homlokzaton
+• Optimális belső komfort: Egyenletes belső hőmérséklet egész évben
+
+**Költségkalkuláció 2024:**
+- Közepes minőségű EPS rendszer: 8.000-10.500 Ft/m²
+- Prémium kőzetgyapot rendszer: 10.500-13.500 Ft/m²
+
+**Támogatási lehetőségek:**
+- Otthonfelújítási támogatás: 3-6 millió Ft
+- Energetikai korszerűsítési hitel: kamattámogatással
+- CSOK Plus: családok számára kiegészítő támogatás`,
+      category: "Hőszigetelés",
       author: "BauHub Szakértő",
-      date: "2024-03-15",
-      readTime: "5 perc"
+      date: "2024-03-20",
+      readTime: "12 perc"
     },
     {
       id: 2,
-      title: "Fürdőszoba burkolás: Praktikus tippek és trendek",
-      excerpt: "Modern fürdőszoba burkolási megoldások, amelyek funkcionalitást és esztétikumot egyesítenek. Szakértői tanácsok a tartós eredményért.",
-      content: `A fürdőszoba burkolás nemcsak esztétikai, hanem gyakorlati szempontból is kulcsfontosságú elem.
+      title: "Fürdőszoba burkolás 2024: Trendek, anyagok és szakmai trükkök",
+      excerpt: "Átfogó útmutató a modern fürdőszoba burkoláshoz. Legújabb trendek, anyagválasztás, vízhatlan megoldások és praktikus tanácsok.",
+      content: `A fürdőszoba burkolás az egyik legkritikusabb építési feladat, amely ötvözi a funkcionalitást, esztétikumot és vízállóságot.
 
-      **Anyagválasztás szempontjai:**
-      
-      • **Csúszásmentesség**: R10-R13 besorolású lapok a biztonság érdekében
-      • **Vízállóság**: Minimális vízfelszívódású anyagok választása
-      • **Könnyű tisztíthatóság**: Sima felületű, fugamentes megoldások
-      • **Méretek**: Nagy méretű lapok kevesebb fugával, egyszerűbb karbantartás
-      
-      **2024-es trendek:**
-      
-      1. **Természetes kő hatású lapok**: Travertin, márvány megjelenés
-      2. **Minimalista stílus**: Egységes színvilág, kevés mintázat
-      3. **Formatervezési újdonságok**: Hexagon, elongált téglalap formák
-      4. **Textúrált felületek**: Matt felületek a fényvisszaverődés csökkentésére
-      
-      **Fugázási tippek**: Epoxy alapú fugázóanyagok használata a magas nedvességű zónákban a penészesedés elkerülése érdekében.`,
+**2024-es burkolási trendek:**
+1. Nagy méretű lapok (60x120 cm, 80x160 cm)
+2. Természetes kő hatású lapok  
+3. Hexagon (hatszög) alakú lapok
+4. Természetes földszínek dominálnak
+
+**Anyagok összehasonlítása:**
+- Porcelán lapok: Vízfelvétel <0,5%, 3.500-15.000 Ft/m²
+- Kerámialapok: Költséghatékony, 1.500-6.000 Ft/m²
+- Természetes kő: Luxus megjelenés, 8.000-25.000 Ft/m²
+
+**Vízhatlan kivitelezési technikák:**
+• Folyékony vízszigetelés: Polimer alapú bevonatok
+• Fólia vízszigetelés: PE vagy PVC fólia
+• Szövetbetétes vízszigetelés: Üvegszövet erősítés
+
+**Költségkalkuláció (5 m²):**
+- Alapszintű felújítás: 190.000 Ft
+- Közepes szintű: 275.000 Ft  
+- Luxus felújítás: 425.000 Ft`,
       category: "Burkolás",
-      author: "BauHub Szakértő", 
-      date: "2024-03-10",
-      readTime: "6 perc"
+      author: "BauHub Szakértő",
+      date: "2024-03-18",
+      readTime: "15 perc"
     },
     {
       id: 3,
-      title: "Tetőfelújítás előtt: Mire figyeljünk?",
-      excerpt: "Tetőfelújítás tervezése és kivitelezése. Praktikus tanácsok a hosszú távú megoldásért és a költséghatékony kivitelezésért.",
-      content: `A tetőfelújítás komoly beruházás, ezért fontos a gondos előkészítés és tervezés.
+      title: "Tetőfelújítás 2024: Teljes útmutató a költségektől a kivitelezésig",
+      excerpt: "Komprehenzív tetőfelújítási kalauz. Anyagválasztás, költségek, időzítés, engedélyezés és gyakorlati tanácsok.",
+      content: `A tetőfelújítás az egyik legnagyobb beruházás egy ingatlan életében. 2024-ben új anyagok, technikák és támogatási lehetőségek állnak rendelkezésre.
 
-      **Felmérési szempontok:**
-      
-      • **Szerkezeti állapot**: Szarufák, ácsszerkezet vizsgálata
-      • **Szigetelés ellenőrzése**: Hő- és vízszigetelés hatékonysága
-      • **Cserepek/fedőanyag**: Repedések, elmozdulások feltérképezése
-      • **Ereszcsatorna rendszer**: Vízelvezetés megfelelősége
-      
-      **Időzítés fontossága:**
-      
-      Tavaszi-nyári időszakban érdemes tervezni, amikor kedvezőek az időjárási viszonyok. A felújítás 2-3 hétig is eltarthat, ezért fontos a száraz időszak kiválasztása.
-      
-      **Anyagválasztás:**
-      
-      1. **Cserép**: Hagyományos megoldás, tartós és esztétikus
-      2. **Lemezfedés**: Gyors telepítés, költséghatékony
-      3. **Bitumenes zsindely**: Könnyű, rugalmas, változatos megjelenés
-      
-      **Engedélyezés**: Több mint 30%-os tetőfelújításnál építési engedély szükséges!`,
+**Fedőanyagok összehasonlítása:**
+1. Kerámiacserép: 50-80 év élettartam, 2.800-4.500 Ft/m²
+2. Betoncserép: 30-50 év, 1.800-3.200 Ft/m²
+3. Fémlemez fedések: 25-40 év, 1.200-8.500 Ft/m²
+4. Bitumenes zsindely: 20-30 év, 2.200-4.800 Ft/m²
+
+**Költségkalkuláció 100 m²:**
+- Alapszintű felújítás: 1.200.000 Ft
+- Teljes körű (szigeteléssel): 2.400.000 Ft
+- Energetikai korszerűsítés: 3.180.000 Ft
+
+**Támogatások:**
+- Otthonfelújítási támogatás: Maximum 6 millió Ft
+- CSOK Plus kiegészítő: További 3 millió Ft családoknak`,
       category: "Tetőzet",
-      author: "BauHub Szakértő",
-      date: "2024-03-05", 
-      readTime: "5 perc"
+      author: "BauHub Szakértő", 
+      date: "2024-03-15",
+      readTime: "18 perc"
     },
     {
       id: 4,
-      title: "Nyílászárócsere: Mikor érdemes cserélni?",
-      excerpt: "Régi ablakok és ajtók cseréje jelentős energiamegtakarítást eredményezhet. Tudnivalók a nyílászárócsere előnyeiről és folyamatáról.",
-      content: `A nyílászárók cseréje az egyik leghatékonyabb energetikai felújítás lehet egy ingatlanban.
+      title: "Nyílászárócsere 2024: Energetikai korszerűsítés támogatásokkal",
+      excerpt: "Részletes útmutató a modern nyílászárók kiválasztásához. Anyagok, energiahatékonyság, támogatások és telepítési folyamat.",
+      content: `A nyílászárócsere az egyik leghatékonyabb energetikai beruházás, amely akár 40-60%-kal is csökkentheti a fűtési költségeket.
 
-      **Mikor érdemes cserélni?**
-      
-      • **20 évnél régebbi ablakok**: Elavult szigetelési technológia
-      • **Huzat érzékelhető**: Tömítések elöregedése
-      • **Kondenzáció**: Páralecsapódás az üvegen belül
-      • **Nehéz nyitás/zárás**: Szerkezeti problémák
-      
-      **Modern nyílászárók előnyei:**
-      
-      1. **Energiatakarékosság**: 3 rétegű üvegezés, alacsony U-érték
-      2. **Zajvédelem**: Akár 40-50 dB zajcsökkentés
-      3. **Biztonság**: Többpontos zárak, biztonsági üvegezés
-      4. **Karbantartás**: Minimális ápolási igény
-      
-      **Anyagok összehasonlítása:**
-      
-      • **PVC**: Költséghatékony, jó szigetelés, széles színpaletta
-      • **Fa**: Természetes megjelenés, jó hőszigetelés, környezetbarát
-      • **Alumínium**: Tartós, modern design, minimális karbantartás
-      
-      **Támogatások**: CSOK Plus és egyéb állami támogatások igénybe vehetők energetikai korszerűsítéshez.`,
+**Anyagok összehasonlítása:**
+- PVC: Kiváló ár/érték, 45.000-140.000 Ft/m²
+- Fa: Természetes megjelenés, 80.000-280.000 Ft/m²  
+- Alumínium: Tartós, modern, 90.000-350.000 Ft/m²
+- Fa-alumínium: Prémium megoldás, 180.000-280.000 Ft/m²
+
+**Energetikai megtakarítás:**
+- Régi ablak: 4,5-6,0 W/m²K, 9.000-12.000 Ft/m²/év
+- Modern PVC: 1,0-1,4 W/m²K, 2.000-2.800 Ft/m²/év
+- Megtakarítás: 75-80%
+
+**Támogatások 2024:**
+- Otthonfelújítási támogatás: 3-6 millió Ft
+- CSOK Plus: Extra 3 millió Ft családoknak
+- Zöld hitelek: 3-6% kedvezményes kamat`,
       category: "Nyílászárók",
       author: "BauHub Szakértő",
-      date: "2024-02-28",
-      readTime: "4 perc"
+      date: "2024-03-12", 
+      readTime: "16 perc"
+    },
+    {
+      id: 5,
+      title: "Gipszkarton rendszerek 2024: Válaszfalak, álmennyezetek és modern megoldások",
+      excerpt: "Teljes körű gipszkartonozási útmutató. Rendszertípusok, költségek, kivitelezési technikák és kreatív megoldások.",
+      content: `A gipszkarton technológia forradalmasította a modern építőipart. Gyors, tiszta és sokoldalú megoldásokat kínál.
+
+**Rendszertípusok:**
+1. Egyszeres vázas válaszfal: 75 mm, 3.500-4.500 Ft/m²
+2. Dupla vázas rendszer: 150 mm, 5.500-7.500 Ft/m²
+3. Álmennyezet közvetlen: 6-8 cm magasság, 2.800-3.800 Ft/m²
+4. Kétszintű függesztés: 12-15 cm, 3.500-4.800 Ft/m²
+
+**Gipszkarton típusok:**
+- Standard GKB: Normál használat, 450-650 Ft/m²
+- Vízálló GKBI: Fürdőszoba, 550-750 Ft/m²  
+- Tűzálló GKF: Tűzvédelem, 650-950 Ft/m²
+- Hangcsillapító GKA: Akusztika, 1.200-1.800 Ft/m²
+
+**Speciális kialakítások:**
+- Íves konstrukciók
+- Többszintű mennyezetek  
+- Rejtett világítás
+- Titkos ajtók`,
+      category: "Gipszkarton",
+      author: "BauHub Szakértő",
+      date: "2024-03-08",
+      readTime: "14 perc"
     }
   ];
 
