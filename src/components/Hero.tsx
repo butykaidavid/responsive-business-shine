@@ -12,8 +12,10 @@ const Hero = () => {
       className="relative min-h-screen flex items-center justify-center overflow-hidden bg-cover bg-center pt-16 sm:pt-20 md:pt-24 lg:pt-28 scroll-mt-24 md:scroll-mt-28"
       style={{ backgroundImage: `url(${heroBg})` }}
     >
-      {/* Dark overlay for readability - more subtle background */}
+      {/* Dark overlay for readability */}
       <div className="absolute inset-0 bg-black/60 md:bg-black/55"></div>
+      {/* Foggy greenish gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-primary/10 to-primary/5"></div>
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
