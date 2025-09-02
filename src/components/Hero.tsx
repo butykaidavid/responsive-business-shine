@@ -6,7 +6,9 @@ import heroImage from "@/assets/hero-construction.jpg";
 
 const Hero = () => {
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-background via-primary/5 to-background pt-24 sm:pt-28 md:pt-32 lg:pt-36 scroll-mt-24 md:scroll-mt-28">
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-background via-primary/5 to-background pt-20 sm:pt-24 md:pt-28 lg:pt-32 scroll-mt-24 md:scroll-mt-28">
+      {/* Top gradient overlay */}
+      <div className="absolute top-0 left-0 right-0 h-40 bg-gradient-to-b from-primary/5 to-transparent"></div>
       {/* Animated Background Elements */}
       <div className="absolute inset-0">
         <div className="absolute top-20 left-20 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-float opacity-70"></div>
@@ -19,23 +21,25 @@ const Hero = () => {
           {/* Left Column - Content */}
           <div className="space-y-8 animate-fade-in-up">
             {/* Trust Badges */}
-            <div className="flex flex-wrap gap-3 mb-6">
-              <Badge variant="outline" className="bg-primary/10 border-primary/20 text-primary px-4 py-2 hover:scale-105 transition-transform">
-                <Star className="h-4 w-4 mr-2 fill-current" />
-                5.0 ⭐ Értékelés
-              </Badge>
-              <Badge variant="outline" className="bg-green-50 border-green-200 text-green-700 px-4 py-2 hover:scale-105 transition-transform">
-                <Shield className="h-4 w-4 mr-2" />
-                15+ Év Tapasztalat
-              </Badge>
-              <Badge variant="outline" className="bg-blue-50 border-blue-200 text-blue-700 px-4 py-2 hover:scale-105 transition-transform">
-                <Users className="h-4 w-4 mr-2" />
-                200+ Ügyfél
-              </Badge>
+            <div className="max-w-fit inline-flex p-2.5 sm:p-3 rounded-2xl bg-white/70 backdrop-blur-sm border border-primary/10 shadow-sm mb-6">
+              <div className="flex flex-wrap gap-3">
+                <Badge variant="outline" className="bg-primary/10 border-primary/20 text-primary px-4 py-2 hover:scale-105 transition-transform">
+                  <Star className="h-4 w-4 mr-2 fill-current" />
+                  5.0 ⭐ Értékelés
+                </Badge>
+                <Badge variant="outline" className="bg-green-50 border-green-200 text-green-700 px-4 py-2 hover:scale-105 transition-transform">
+                  <Shield className="h-4 w-4 mr-2" />
+                  15+ Év Tapasztalat
+                </Badge>
+                <Badge variant="outline" className="bg-blue-50 border-blue-200 text-blue-700 px-4 py-2 hover:scale-105 transition-transform">
+                  <Users className="h-4 w-4 mr-2" />
+                  200+ Ügyfél
+                </Badge>
+              </div>
             </div>
 
             {/* Main Headline */}
-            <div className="mt-16">
+            <div className="mt-10 md:mt-12">
               <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 leading-tight">
                 <span className="bg-gradient-to-r from-primary via-primary-dark to-primary bg-clip-text text-transparent animate-gradient">
                   Álmai Otthona
