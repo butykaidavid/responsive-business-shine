@@ -83,7 +83,7 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="py-20 bg-gradient-to-br from-gray-50 to-background relative overflow-hidden">
+    <section id="services" className="py-20 bg-gradient-to-br from-gray-50 to-background relative overflow-hidden scroll-mt-24 md:scroll-mt-28">
       {/* Background Elements */}
       <div className="absolute inset-0">
         <div className="absolute top-20 right-20 w-96 h-96 bg-primary/5 rounded-full blur-3xl animate-float"></div>

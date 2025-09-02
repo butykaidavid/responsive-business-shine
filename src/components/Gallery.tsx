@@ -103,7 +103,7 @@ const Gallery = () => {
   };
 
   return (
-    <section id="gallery" className="py-20 bg-background relative overflow-hidden">
+    <section id="gallery" className="py-20 bg-background relative overflow-hidden scroll-mt-24 md:scroll-mt-28">
       {/* Background decoration */}
       <div className="absolute inset-0">
         <div className="absolute top-20 right-20 w-96 h-96 bg-primary/5 rounded-full blur-3xl animate-float"></div>

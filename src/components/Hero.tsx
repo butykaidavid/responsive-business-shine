@@ -6,7 +6,7 @@ import heroImage from "@/assets/hero-construction.jpg";
 
 const Hero = () => {
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-background via-primary/5 to-background">
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-background via-primary/5 to-background pt-24 sm:pt-28 md:pt-32 lg:pt-36 scroll-mt-24 md:scroll-mt-28">
       {/* Animated Background Elements */}
       <div className="absolute inset-0">
         <div className="absolute top-20 left-20 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-float opacity-70"></div>
@@ -36,7 +36,7 @@ const Hero = () => {
 
             {/* Main Headline */}
             <div className="mt-16">
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 leading-tight">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 leading-tight">
                 <span className="bg-gradient-to-r from-primary via-primary-dark to-primary bg-clip-text text-transparent animate-gradient">
                   Álmai Otthona
                 </span>
@@ -98,7 +98,7 @@ const Hero = () => {
             </div>
 
             {/* Social Proof */}
-            <div className="pt-6 border-t border-primary/10">
+            <div className="pt-6 border-t border-primary/10 mb-6 sm:mb-8">
               <p className="text-sm text-muted-foreground mb-3">
                 <strong>Legutóbbi ügyfeleinktől:</strong>
               </p>
