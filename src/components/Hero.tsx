@@ -3,13 +3,13 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ArrowRight, Star, Shield, Clock, Users } from "lucide-react";
 import heroImage from "@/assets/hero-construction.jpg";
-import heroBg from "@/assets/exterior-renovation.jpg";
+import heroBg from "@/assets/insulation-work.jpg";
 
 const Hero = () => {
   return (
     <section 
       id="home" 
-      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-cover bg-center pt-16 sm:pt-20 md:pt-24 lg:pt-28 scroll-mt-24 md:scroll-mt-28"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-cover bg-center pt-12 sm:pt-16 md:pt-20 lg:pt-24 scroll-mt-24 md:scroll-mt-28"
       style={{ backgroundImage: `url(${heroBg})` }}
     >
       {/* Strong green gradient overlay to match original look */}
