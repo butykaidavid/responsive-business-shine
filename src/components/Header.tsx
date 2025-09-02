@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Phone, Mail } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -8,12 +9,12 @@ const Header = () => {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   const navItems = [
-    { label: "Főoldal", href: "#home" },
-    { label: "Szolgáltatások", href: "#services" },
-    { label: "Projektjeink", href: "/projektek" },
-    { label: "Galéria", href: "#gallery" },
-    { label: "Blog", href: "/blog" },
-    { label: "Kapcsolat", href: "#contact" },
+    { label: "Főoldal", href: "#home", isRoute: false },
+    { label: "Szolgáltatások", href: "#services", isRoute: false },
+    { label: "Projektjeink", href: "/projektek", isRoute: true },
+    { label: "Galéria", href: "#gallery", isRoute: false },
+    { label: "Blog", href: "/blog", isRoute: true },
+    { label: "Kapcsolat", href: "#contact", isRoute: false },
   ];
 
   return (
@@ -31,14 +32,25 @@ const Header = () => {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
-              <a
-                key={item.label}
-                href={item.href}
-                className="relative text-foreground hover:text-primary transition-all duration-300 font-medium py-2 group"
-              >
-                {item.label}
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-primary transition-all duration-300 group-hover:w-full"></span>
-              </a>
+              item.isRoute ? (
+                <Link
+                  key={item.label}
+                  to={item.href}
+                  className="relative text-foreground hover:text-primary transition-all duration-300 font-medium py-2 group"
+                >
+                  {item.label}
+                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-primary transition-all duration-300 group-hover:w-full"></span>
+                </Link>
+              ) : (
+                <a
+                  key={item.label}
+                  href={item.href}
+                  className="relative text-foreground hover:text-primary transition-all duration-300 font-medium py-2 group"
+                >
+                  {item.label}
+                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-primary transition-all duration-300 group-hover:w-full"></span>
+                </a>
+              )
             ))}
           </nav>
 
@@ -73,15 +85,27 @@ const Header = () => {
           <div className="md:hidden py-4 border-t animate-fade-in-up glass rounded-b-lg mx-4">
             <nav className="flex flex-col space-y-4">
               {navItems.map((item, index) => (
-                <a
-                  key={item.label}
-                  href={item.href}
-                  className="text-foreground hover:text-primary transition-all duration-300 font-medium py-2 transform hover:translate-x-2"
-                  style={{ animationDelay: `${index * 100}ms` }}
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  {item.label}
-                </a>
+                item.isRoute ? (
+                  <Link
+                    key={item.label}
+                    to={item.href}
+                    className="text-foreground hover:text-primary transition-all duration-300 font-medium py-2 transform hover:translate-x-2"
+                    style={{ animationDelay: `${index * 100}ms` }}
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    {item.label}
+                  </Link>
+                ) : (
+                  <a
+                    key={item.label}
+                    href={item.href}
+                    className="text-foreground hover:text-primary transition-all duration-300 font-medium py-2 transform hover:translate-x-2"
+                    style={{ animationDelay: `${index * 100}ms` }}
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    {item.label}
+                  </a>
+                )
               ))}
               <div className="pt-4 border-t flex flex-col space-y-3">
                 <a href="tel:+36306616016" className="flex items-center space-x-2 text-sm text-muted-foreground hover:text-primary transition-colors">

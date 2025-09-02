@@ -12,15 +12,15 @@ const Hero = () => {
       className="relative min-h-screen flex items-center justify-center overflow-hidden bg-cover bg-center pt-16 sm:pt-20 md:pt-24 lg:pt-28 scroll-mt-24 md:scroll-mt-28"
       style={{ backgroundImage: `url(${heroBg})` }}
     >
-      {/* Dark overlay for readability */}
-      <div className="absolute inset-0 bg-black/35 md:bg-black/30"></div>
+      {/* Dark overlay for readability - more subtle background */}
+      <div className="absolute inset-0 bg-black/60 md:bg-black/55"></div>
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Column - Content */}
           <div className="space-y-6 animate-fade-in-up">
             {/* Trust Badges */}
-            <div className="flex flex-wrap gap-3 mb-4">
+            <div className="flex flex-wrap gap-3 mb-2">
               <Badge variant="outline" className="bg-primary/10 border-primary/20 text-primary px-4 py-2 hover:scale-105 transition-transform">
                 <Star className="h-4 w-4 mr-2 fill-current" />
                 5.0 ⭐ Értékelés
@@ -36,7 +36,7 @@ const Hero = () => {
             </div>
 
             {/* Main Headline */}
-            <div className="mt-8 md:mt-10">
+            <div className="mt-4 md:mt-6">
               <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-4 leading-tight">
                 <span className="bg-gradient-to-r from-primary via-primary-dark to-primary bg-clip-text text-transparent animate-gradient">
                   Álmai Otthona
