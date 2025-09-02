@@ -65,23 +65,30 @@ const Contact = () => {
                 </p>
               </CardHeader>
               <CardContent className="space-y-6">
-                <form className="space-y-6">
+                <form className="space-y-6" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                  <input type="hidden" name="form-name" value="contact" />
+                  <input type="hidden" name="bot-field" />
+                  
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div className="space-y-2">
                       <Label htmlFor="name">Név *</Label>
                       <Input 
                         id="name" 
+                        name="name"
                         placeholder="Az Ön neve"
-                        className="border-gray-200 focus:border-primary"
+                        className="focus:border-primary"
+                        required
                       />
                     </div>
                     <div className="space-y-2">
                       <Label htmlFor="phone">Telefon *</Label>
                       <Input 
                         id="phone" 
+                        name="phone"
                         type="tel"
                         placeholder="06 XX XXX XXXX"
-                        className="border-gray-200 focus:border-primary"
+                        className="focus:border-primary"
+                        required
                       />
                     </div>
                   </div>
@@ -90,9 +97,10 @@ const Contact = () => {
                     <Label htmlFor="email">E-mail cím</Label>
                     <Input 
                       id="email" 
+                      name="email"
                       type="email"
                       placeholder="email@example.com"
-                      className="border-gray-200 focus:border-primary"
+                      className="focus:border-primary"
                     />
                   </div>
 
@@ -100,7 +108,8 @@ const Contact = () => {
                     <Label htmlFor="service">Milyen szolgáltatás érdekli?</Label>
                     <select 
                       id="service"
-                      className="w-full px-3 py-2 border border-gray-200 rounded-md focus:outline-none focus:border-primary"
+                      name="service"
+                      className="w-full px-3 py-2 border border-input rounded-md focus:outline-none focus:border-primary bg-background"
                     >
                       <option value="">Válasszon szolgáltatást</option>
                       <option value="renovation">Lakás/ház felújítás</option>
@@ -119,12 +128,13 @@ const Contact = () => {
                     <Label htmlFor="message">Üzenet</Label>
                     <Textarea 
                       id="message"
+                      name="message"
                       placeholder="Írja le részletesen, milyen munkálatokat szeretne elvégeztetni..."
-                      className="min-h-[100px] border-gray-200 focus:border-primary"
+                      className="min-h-[100px] focus:border-primary"
                     />
                   </div>
 
-                  <Button variant="cta" size="lg" className="w-full">
+                  <Button type="submit" variant="cta" size="lg" className="w-full">
                     <Send className="h-5 w-5 mr-2" />
                     Ajánlat kérése
                   </Button>

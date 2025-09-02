@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -211,8 +212,14 @@ const Projects = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-background">
-      <Header />
+    <>
+      <SEO 
+        title="Megvalósított Projektek - 200+ sikeres építési projekt"
+        description="Tekintse meg legszebb projektjeinket! Családi házak felújítása, homlokzati szigetelés, fürdőszoba korszerűsítés, irodák átalakítása Borsod-Abaúj-Zemplén megyében."
+        keywords="építési projektek, lakásfelújítás, családi ház felújítás, homlokzati szigetelés példák, fürdőszoba átalakítás, iroda felújítás"
+      />
+      <div className="min-h-screen bg-background">
+        <Header />
       
       {/* Hero Section */}
       <section className="pt-32 pb-20 bg-gradient-to-br from-background via-primary/5 to-background relative overflow-hidden">
@@ -425,8 +432,9 @@ const Projects = () => {
         </div>
       </section>
 
-      <Footer />
-    </div>
+        <Footer />
+      </div>
+    </>
   );
 };
 

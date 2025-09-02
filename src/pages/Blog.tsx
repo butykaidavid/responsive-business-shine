@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Clock, User, Calendar } from "lucide-react";
@@ -154,8 +155,14 @@ Az ETICS egy többrétegű hőszigetelő rendszer, amely a homlokzat külső fel
   ];
 
   return (
-    <div className="min-h-screen bg-background">
-      <Header />
+    <>
+      <SEO 
+        title="Blog - Építési szakértelem és tanácsok"
+        description="Praktikus tanácsok, szakmai tippek és legfrissebb trendek az építőiparban. Homlokzati szigetelés, burkolás, tetőfelújítás és nyílászárócsere útmutatók."
+        keywords="építési blog, felújítási tanácsok, ETICS szigetelés, burkolási tippek, tetőfelújítás útmutató, nyílászárócsere, gipszkarton technikák"
+      />
+      <div className="min-h-screen bg-background">
+        <Header />
       
       {/* Hero Section */}
       <section className="pt-24 pb-16 px-4">
@@ -237,8 +244,9 @@ Az ETICS egy többrétegű hőszigetelő rendszer, amely a homlokzat külső fel
         </div>
       </section>
 
-      <Footer />
-    </div>
+        <Footer />
+      </div>
+    </>
   );
 };
 
