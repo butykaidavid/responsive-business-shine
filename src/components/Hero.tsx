@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ArrowRight, Star, Shield, Clock, Users } from "lucide-react";
 import heroImage from "@/assets/hero-construction.jpg";
-import heroBg from "@/assets/insulation-work.jpg";
+import heroBg from "@/assets/european-house-insulation.jpg";
 
 const Hero = () => {
   return (
