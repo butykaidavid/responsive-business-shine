@@ -12,10 +12,10 @@ const Hero = () => {
       className="relative min-h-screen flex items-center justify-center overflow-hidden bg-cover bg-center pt-16 sm:pt-20 md:pt-24 lg:pt-28 scroll-mt-24 md:scroll-mt-28"
       style={{ backgroundImage: `url(${heroBg})` }}
     >
-      {/* Dark overlay for readability */}
-      <div className="absolute inset-0 bg-black/60 md:bg-black/55"></div>
-      {/* Foggy greenish gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-primary/10 to-primary/5"></div>
+      {/* Strong green gradient overlay to match original look */}
+      <div className="absolute inset-0 bg-gradient-to-br from-background via-primary/5 to-background"></div>
+      {/* Additional subtle overlay to let just a hint of background show */}
+      <div className="absolute inset-0 bg-background/85"></div>
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -39,16 +39,16 @@ const Hero = () => {
 
             {/* Main Headline */}
             <div className="mt-4 md:mt-6">
-              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-4 leading-tight">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-foreground mb-4 leading-tight">
                 <span className="bg-gradient-to-r from-primary via-primary-dark to-primary bg-clip-text text-transparent animate-gradient">
                   Álmai Otthona
                 </span>
                 <br />
-                <span className="text-white">
+                <span className="text-foreground">
                   Vár Önre! 🏠✨
                 </span>
               </h1>
-              <p className="text-xl md:text-2xl text-white/90 leading-relaxed max-w-2xl">
+              <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed max-w-2xl">
                 <strong className="text-primary">Professzionális építőipari szolgáltatások</strong> lakások és házak teljes körű felújításához.
                 <span className="block mt-3 text-lg">
                   🎯 <strong>Ingyenes felmérés</strong> • 
@@ -101,15 +101,15 @@ const Hero = () => {
             </div>
 
             {/* Social Proof */}
-            <div className="pt-4 border-t border-white/20 mb-4 sm:mb-6">
-              <p className="text-sm text-white/80 mb-3">
+            <div className="pt-4 border-t border-primary/10 mb-4 sm:mb-6">
+              <p className="text-sm text-muted-foreground mb-3">
                 <strong>Legutóbbi ügyfeleinktől:</strong>
               </p>
               <div className="space-y-2">
-                <p className="text-sm italic text-white/70">
+                <p className="text-sm italic text-muted-foreground">
                   💬 "Pontosan határidőre készültek el, gyönyörű lett a lakásunk!" - Kovács Anna
                 </p>
-                <p className="text-sm italic text-white/70">
+                <p className="text-sm italic text-muted-foreground">
                   💬 "Professzionális csapat, csak ajánlani tudom!" - Nagy Péter
                 </p>
               </div>
