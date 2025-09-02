@@ -3,53 +3,50 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ArrowRight, Star, Shield, Clock, Users } from "lucide-react";
 import heroImage from "@/assets/hero-construction.jpg";
+import heroBg from "@/assets/exterior-renovation.jpg";
 
 const Hero = () => {
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-background via-primary/5 to-background pt-20 sm:pt-24 md:pt-28 lg:pt-32 scroll-mt-24 md:scroll-mt-28">
-      {/* Top gradient overlay */}
-      <div className="absolute top-0 left-0 right-0 h-40 bg-gradient-to-b from-primary/5 to-transparent"></div>
-      {/* Animated Background Elements */}
-      <div className="absolute inset-0">
-        <div className="absolute top-20 left-20 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-float opacity-70"></div>
-        <div className="absolute bottom-32 right-32 w-80 h-80 bg-primary-light/15 rounded-full blur-3xl animate-float opacity-60" style={{ animationDelay: '2s' }}></div>
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-mesh opacity-20 rounded-full blur-3xl animate-float" style={{ animationDelay: '4s' }}></div>
-      </div>
+    <section 
+      id="home" 
+      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-cover bg-center pt-16 sm:pt-20 md:pt-24 lg:pt-28 scroll-mt-24 md:scroll-mt-28"
+      style={{ backgroundImage: `url(${heroBg})` }}
+    >
+      {/* Dark overlay for readability */}
+      <div className="absolute inset-0 bg-black/35 md:bg-black/30"></div>
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Column - Content */}
-          <div className="space-y-8 animate-fade-in-up">
+          <div className="space-y-6 animate-fade-in-up">
             {/* Trust Badges */}
-            <div className="max-w-fit inline-flex p-2.5 sm:p-3 rounded-2xl bg-white/70 backdrop-blur-sm border border-primary/10 shadow-sm mb-6">
-              <div className="flex flex-wrap gap-3">
-                <Badge variant="outline" className="bg-primary/10 border-primary/20 text-primary px-4 py-2 hover:scale-105 transition-transform">
-                  <Star className="h-4 w-4 mr-2 fill-current" />
-                  5.0 ⭐ Értékelés
-                </Badge>
-                <Badge variant="outline" className="bg-green-50 border-green-200 text-green-700 px-4 py-2 hover:scale-105 transition-transform">
-                  <Shield className="h-4 w-4 mr-2" />
-                  15+ Év Tapasztalat
-                </Badge>
-                <Badge variant="outline" className="bg-blue-50 border-blue-200 text-blue-700 px-4 py-2 hover:scale-105 transition-transform">
-                  <Users className="h-4 w-4 mr-2" />
-                  200+ Ügyfél
-                </Badge>
-              </div>
+            <div className="flex flex-wrap gap-3 mb-4">
+              <Badge variant="outline" className="bg-primary/10 border-primary/20 text-primary px-4 py-2 hover:scale-105 transition-transform">
+                <Star className="h-4 w-4 mr-2 fill-current" />
+                5.0 ⭐ Értékelés
+              </Badge>
+              <Badge variant="outline" className="bg-green-50 border-green-200 text-green-700 px-4 py-2 hover:scale-105 transition-transform">
+                <Shield className="h-4 w-4 mr-2" />
+                15+ Év Tapasztalat
+              </Badge>
+              <Badge variant="outline" className="bg-blue-50 border-blue-200 text-blue-700 px-4 py-2 hover:scale-105 transition-transform">
+                <Users className="h-4 w-4 mr-2" />
+                200+ Ügyfél
+              </Badge>
             </div>
 
             {/* Main Headline */}
-            <div className="mt-10 md:mt-12">
-              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 leading-tight">
+            <div className="mt-8 md:mt-10">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-4 leading-tight">
                 <span className="bg-gradient-to-r from-primary via-primary-dark to-primary bg-clip-text text-transparent animate-gradient">
                   Álmai Otthona
                 </span>
                 <br />
-                <span className="text-foreground">
+                <span className="text-white">
                   Vár Önre! 🏠✨
                 </span>
               </h1>
-              <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed max-w-2xl">
+              <p className="text-xl md:text-2xl text-white/90 leading-relaxed max-w-2xl">
                 <strong className="text-primary">Professzionális építőipari szolgáltatások</strong> lakások és házak teljes körű felújításához.
                 <span className="block mt-3 text-lg">
                   🎯 <strong>Ingyenes felmérés</strong> • 
@@ -60,7 +57,7 @@ const Hero = () => {
             </div>
 
             {/* Key Benefits */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-6">
               <div className="bg-white/70 backdrop-blur-sm rounded-xl p-4 border border-primary/10 hover:shadow-lg transition-all duration-300 hover:scale-105">
                 <Clock className="h-8 w-8 text-primary mb-2" />
                 <h3 className="font-bold text-sm text-foreground">Pontos Határidő</h3>
@@ -79,7 +76,7 @@ const Hero = () => {
             </div>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 pt-4">
+            <div className="flex flex-col sm:flex-row gap-4 pt-3">
               <a href="#contact">
                 <Button 
                   variant="hero" 
@@ -102,15 +99,15 @@ const Hero = () => {
             </div>
 
             {/* Social Proof */}
-            <div className="pt-6 border-t border-primary/10 mb-6 sm:mb-8">
-              <p className="text-sm text-muted-foreground mb-3">
+            <div className="pt-4 border-t border-white/20 mb-4 sm:mb-6">
+              <p className="text-sm text-white/80 mb-3">
                 <strong>Legutóbbi ügyfeleinktől:</strong>
               </p>
               <div className="space-y-2">
-                <p className="text-sm italic text-muted-foreground">
+                <p className="text-sm italic text-white/70">
                   💬 "Pontosan határidőre készültek el, gyönyörű lett a lakásunk!" - Kovács Anna
                 </p>
-                <p className="text-sm italic text-muted-foreground">
+                <p className="text-sm italic text-white/70">
                   💬 "Professzionális csapat, csak ajánlani tudom!" - Nagy Péter
                 </p>
               </div>
