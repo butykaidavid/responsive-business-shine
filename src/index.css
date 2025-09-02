@@ -8,51 +8,51 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 210 10% 15%;
+    --background: 210 20% 95%;
+    --foreground: 210 15% 25%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 210 10% 15%;
+    --card: 0 0% 98%;
+    --card-foreground: 210 15% 25%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 210 10% 15%;
+    --popover: 0 0% 98%;
+    --popover-foreground: 210 15% 25%;
 
-    --primary: 142 71% 45%;
+    --primary: 150 85% 28%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96%;
-    --secondary-foreground: 210 10% 15%;
+    --secondary: 210 20% 88%;
+    --secondary-foreground: 210 15% 25%;
 
-    --muted: 210 40% 96%;
+    --muted: 210 20% 88%;
     --muted-foreground: 215 16% 47%;
 
-    --accent: 142 71% 45%;
+    --accent: 150 85% 28%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 214 32% 91%;
-    --input: 214 32% 91%;
-    --ring: 142 71% 45%;
+    --border: 210 20% 82%;
+    --input: 210 20% 82%;
+    --ring: 150 85% 28%;
 
     --radius: 0.75rem;
 
     /* Custom design tokens */
-    --primary-light: 142 71% 55%;
-    --primary-dark: 142 71% 35%;
-    --success: 142 71% 45%;
+    --primary-light: 150 80% 35%;
+    --primary-dark: 150 90% 22%;
+    --success: 150 85% 28%;
     --warning: 43 96% 56%;
-    --gray-50: 210 40% 98%;
-    --gray-100: 210 40% 96%;
-    --gray-200: 214 32% 91%;
-    --gray-300: 213 27% 84%;
-    --gray-400: 215 20% 65%;
-    --gray-500: 215 16% 47%;
-    --gray-600: 215 19% 35%;
-    --gray-700: 215 25% 27%;
-    --gray-800: 217 33% 17%;
-    --gray-900: 222 84% 5%;
+    --gray-50: 210 20% 98%;
+    --gray-100: 210 20% 95%;
+    --gray-200: 210 20% 88%;
+    --gray-300: 210 20% 80%;
+    --gray-400: 210 15% 65%;
+    --gray-500: 210 15% 50%;
+    --gray-600: 210 20% 40%;
+    --gray-700: 210 25% 30%;
+    --gray-800: 210 30% 20%;
+    --gray-900: 210 40% 10%;
 
     /* Advanced Gradients */
     --gradient-primary: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--primary-light)) 100%);
