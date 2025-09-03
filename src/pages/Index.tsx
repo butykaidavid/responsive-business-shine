@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Services from "@/components/Services";
@@ -11,6 +13,24 @@ import MobileStickyBar from "@/components/MobileStickyBar";
 import SEO from "@/components/SEO";
 
 const Index = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const element = document.querySelector(location.hash);
+      if (element) {
+        const headerOffset = 100; // Adjust for fixed header
+        const elementPosition = (element as HTMLElement).offsetTop;
+        const offsetPosition = elementPosition - headerOffset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth"
+        });
+      }
+    }
+  }, [location]);
+
   return (
     <>
       <SEO />

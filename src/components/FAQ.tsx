@@ -1,5 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import { 
   Accordion,
   AccordionContent,
@@ -203,12 +204,12 @@ const FAQ = () => {
                 ⚡ <strong>Azonnali válaszadás</strong> - 24 órán belül
               </p>
               <div className="flex flex-col sm:flex-row gap-6 justify-center">
-                <a href="#contact">
+                <Link to={{ pathname: "/", hash: "#contact" }}>
                   <Button variant="outline" size="lg" className="bg-white/20 border-white/30 text-white hover:bg-white hover:text-primary transition-all duration-300 hover:scale-105 shadow-lg text-lg px-8 py-4">
                     💬 Kérdés Feltevése
                     <ArrowRight className="h-5 w-5 ml-2" />
                   </Button>
-                </a>
+                </Link>
                 <a href="tel:+36306616016">
                   <Button variant="outline" size="lg" className="bg-transparent border-white/30 text-white hover:bg-white hover:text-primary transition-all duration-300 hover:scale-105 text-lg px-8 py-4">
                     📞 Telefonos Konzultáció

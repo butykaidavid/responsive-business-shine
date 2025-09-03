@@ -2,6 +2,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Star, Quote, ArrowLeft, ArrowRight } from "lucide-react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Reviews = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -251,11 +252,11 @@ const Reviews = () => {
                 ⚡ <strong>Gyors kivitelezés</strong> - megbízható határidők
               </p>
               <div className="flex flex-col sm:flex-row gap-6 justify-center">
-                <a href="#contact">
+                <Link to={{ pathname: "/", hash: "#contact" }}>
                   <Button variant="outline" size="lg" className="bg-white/20 border-white/30 text-white hover:bg-white hover:text-primary transition-all duration-300 hover:scale-105 shadow-lg text-lg px-8 py-4">
                     🎯 Ingyenes Ajánlat
                   </Button>
-                </a>
+                </Link>
                 <a href="tel:+36306616016">
                   <Button variant="outline" size="lg" className="bg-transparent border-white/30 text-white hover:bg-white hover:text-primary transition-all duration-300 hover:scale-105 text-lg px-8 py-4">
                     📞 Azonnali Kapcsolat

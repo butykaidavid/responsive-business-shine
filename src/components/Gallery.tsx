@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Eye, ExternalLink, X } from "lucide-react";
+import { Link } from "react-router-dom";
 import renovationInterior from "@/assets/renovation-interior.jpg";
 import exteriorRenovation from "@/assets/exterior-renovation.jpg";
 import toolsMaterials from "@/assets/tools-materials.jpg";
@@ -221,16 +222,16 @@ const Gallery = () => {
                 ⚡ <strong>Gyors kezdés</strong> - akár 1 héten belül indulunk!
               </p>
               <div className="flex flex-col sm:flex-row gap-6 justify-center animate-scale-in" style={{ animationDelay: '400ms' }}>
-                <a href="#contact">
+                <Link to={{ pathname: "/", hash: "#contact" }}>
                   <Button variant="outline" size="lg" className="bg-white/20 border-white/30 text-white hover:bg-white hover:text-primary transition-all duration-300 hover:scale-105 shadow-lg text-lg px-8 py-4">
                     🎯 Kérek Ajánlatot
                   </Button>
-                </a>
-                <a href="#gallery">
+                </Link>
+                <Link to={{ pathname: "/", hash: "#gallery" }}>
                   <Button variant="outline" size="lg" className="bg-transparent border-white/30 text-white hover:bg-white hover:text-primary transition-all duration-300 hover:scale-105 text-lg px-8 py-4">
                     📋 További Munkák
                   </Button>
-                </a>
+                </Link>
               </div>
             </div>
           </div>

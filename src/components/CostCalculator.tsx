@@ -3,9 +3,9 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Separator } from "@/components/ui/separator";
 import { Calculator, Home, Palette, Hammer, Building, PaintBucket, Wrench } from "lucide-react";
+import { Link } from "react-router-dom";
 
 interface ServicePrice {
   id: string;
@@ -76,7 +76,7 @@ const qualityMultipliers = {
 const CostCalculator = () => {
   const [selectedService, setSelectedService] = useState<string>("");
   const [area, setArea] = useState<string>("");
-  const [quality, setQuality] = useState<string>("standard");
+  const quality = "standard"; // Fixed to standard quality
   const [showResult, setShowResult] = useState<boolean>(false);
 
   const calculateCost = () => {
@@ -186,31 +186,6 @@ const CostCalculator = () => {
                     />
                   </div>
 
-                  <Separator />
-
-                  {/* Quality Selection */}
-                  <div className="space-y-4">
-                    <Label className="text-lg font-semibold">Minőségi kategória</Label>
-                    <RadioGroup value={quality} onValueChange={setQuality}>
-                      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                        {Object.entries(qualityMultipliers).map(([key, data]) => (
-                          <div key={key} className="flex items-center space-x-2">
-                            <RadioGroupItem value={key} id={key} />
-                            <Label 
-                              htmlFor={key} 
-                              className="flex-1 cursor-pointer p-4 border rounded-lg hover:border-primary/50 transition-colors"
-                            >
-                              <div className="font-semibold">{data.label}</div>
-                              <div className="text-sm text-muted-foreground">{data.description}</div>
-                              <div className="text-sm text-primary">+{Math.round((data.multiplier - 1) * 100)}%</div>
-                            </Label>
-                          </div>
-                        ))}
-                      </div>
-                    </RadioGroup>
-                  </div>
-
-                  <Separator />
 
                   {/* Calculate Button */}
                   <div className="text-center">
@@ -245,7 +220,7 @@ const CostCalculator = () => {
                   {getEstimatedCost().toLocaleString()} Ft
                 </div>
                 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-center">
                   <div className="bg-white/10 rounded-lg p-4">
                     <div className="text-lg font-semibold">Szolgáltatás</div>
                     <div className="text-sm opacity-90">{selectedServiceData?.name}</div>
@@ -253,12 +228,6 @@ const CostCalculator = () => {
                   <div className="bg-white/10 rounded-lg p-4">
                     <div className="text-lg font-semibold">Terület</div>
                     <div className="text-sm opacity-90">{area} {selectedServiceData?.unit}</div>
-                  </div>
-                  <div className="bg-white/10 rounded-lg p-4">
-                    <div className="text-lg font-semibold">Minőség</div>
-                    <div className="text-sm opacity-90">
-                      {qualityMultipliers[quality as keyof typeof qualityMultipliers].label}
-                    </div>
                   </div>
                 </div>
 
@@ -273,7 +242,7 @@ const CostCalculator = () => {
                 </div>
 
                 <div className="space-y-4">
-                  <a href="#contact">
+                  <Link to={{ pathname: "/", hash: "#contact" }}>
                     <Button 
                       variant="outline" 
                       size="lg" 
@@ -281,7 +250,7 @@ const CostCalculator = () => {
                     >
                       Pontos árajánlat kérése
                     </Button>
-                  </a>
+                  </Link>
                   <a href="tel:+36306616016">
                     <Button 
                       variant="outline" 

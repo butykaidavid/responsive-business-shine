@@ -2,6 +2,7 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ArrowRight, Star, Shield, Clock, Users } from "lucide-react";
+import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-construction.jpg";
 import heroBg from "@/assets/european-house-insulation.jpg";
 
@@ -79,7 +80,7 @@ const Hero = () => {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 pt-3">
-              <a href="#contact">
+              <Link to={{ pathname: "/", hash: "#contact" }}>
                 <Button 
                   variant="hero" 
                   size="lg" 
@@ -88,7 +89,7 @@ const Hero = () => {
                   🎯 Ingyenes Felmérés
                   <ArrowRight className="h-5 w-5 ml-2 group-hover:translate-x-1 transition-transform" />
                 </Button>
-              </a>
+              </Link>
               <a href="tel:+36306616016">
                 <Button 
                   variant="outline" 

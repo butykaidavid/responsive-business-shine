@@ -9,13 +9,13 @@ const Header = () => {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   const navItems = [
-    { label: "Főoldal", href: "#home", isRoute: false },
-    { label: "Szolgáltatások", href: "#services", isRoute: false },
-    { label: "Kalkulátor", href: "#calculator", isRoute: false },
+    { label: "Főoldal", href: "/", isRoute: true },
+    { label: "Szolgáltatások", href: "/#services", isRoute: false },
+    { label: "Kalkulátor", href: "/#calculator", isRoute: false },
     { label: "Projektjeink", href: "/projektek", isRoute: true },
-    { label: "Galéria", href: "#gallery", isRoute: false },
+    { label: "Galéria", href: "/#gallery", isRoute: false },
     { label: "Blog", href: "/blog", isRoute: true },
-    { label: "Kapcsolat", href: "#contact", isRoute: false },
+    { label: "Kapcsolat", href: "/#contact", isRoute: false },
   ];
 
   return (
@@ -23,12 +23,12 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex items-center space-x-0.5 group cursor-pointer">
+          <Link to="/" className="flex items-center space-x-0.5 group cursor-pointer">
             <div className="bg-gradient-primary text-primary-foreground px-3 py-1.5 rounded-xl font-bold text-xl shadow-lg group-hover:shadow-primary-lg transition-all duration-300 transform group-hover:scale-105">
               Bau
             </div>
             <span className="text-xl font-bold text-foreground group-hover:text-primary transition-colors duration-300">Hub</span>
-          </div>
+          </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
@@ -43,14 +43,14 @@ const Header = () => {
                   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-primary transition-all duration-300 group-hover:w-full"></span>
                 </Link>
               ) : (
-                <a
+                <Link
                   key={item.label}
-                  href={item.href}
+                  to={{ pathname: "/", hash: item.href.split('/').pop() }}
                   className="relative text-foreground hover:text-primary transition-all duration-300 font-medium py-2 group"
                 >
                   {item.label}
                   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-primary transition-all duration-300 group-hover:w-full"></span>
-                </a>
+                </Link>
               )
             ))}
           </nav>
@@ -61,11 +61,11 @@ const Header = () => {
               <Phone className="h-4 w-4" />
               <span>06 30/661 6016</span>
             </a>
-            <a href="#contact">
+            <Link to={{ pathname: "/", hash: "#contact" }}>
               <Button variant="cta" size="sm" className="shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
                 Ajánlat kérés
               </Button>
-            </a>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -97,15 +97,15 @@ const Header = () => {
                     {item.label}
                   </Link>
                 ) : (
-                  <a
+                  <Link
                     key={item.label}
-                    href={item.href}
+                    to={{ pathname: "/", hash: item.href.split('/').pop() }}
                     className="text-foreground hover:text-primary transition-all duration-300 font-medium py-2 transform hover:translate-x-2"
                     style={{ animationDelay: `${index * 100}ms` }}
                     onClick={() => setIsMenuOpen(false)}
                   >
                     {item.label}
-                  </a>
+                  </Link>
                 )
               ))}
               <div className="pt-4 border-t flex flex-col space-y-3">
@@ -117,11 +117,11 @@ const Header = () => {
                   <Mail className="h-4 w-4" />
                   <span>info@bauhub.hu</span>
                 </div>
-                <a href="#contact">
+                <Link to={{ pathname: "/", hash: "#contact" }}>
                   <Button variant="cta" size="sm" className="w-fit">
                     Ajánlat kérés
                   </Button>
-                </a>
+                </Link>
               </div>
             </nav>
           </div>

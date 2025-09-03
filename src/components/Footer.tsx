@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Phone, Mail, MapPin, Clock, Star } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -46,12 +47,12 @@ const Footer = () => {
                 "Könnyűszerkezetes építés"
               ].map((service, index) => (
                 <li key={index}>
-                  <a 
-                    href="#services" 
+                  <Link 
+                    to={{ pathname: "/", hash: "#services" }}
                     className="text-gray-300 hover:text-primary transition-colors duration-200"
                   >
                     {service}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -106,22 +107,22 @@ const Footer = () => {
                 { label: "Kapcsolat", href: "#contact" }
               ].map((link, index) => (
                 <li key={index}>
-                  <a 
-                    href={link.href} 
+                  <Link 
+                    to={{ pathname: "/", hash: link.href }}
                     className="text-gray-300 hover:text-primary transition-colors duration-200"
                   >
                     {link.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
             
             <div className="pt-4">
-              <a href="#contact">
+              <Link to={{ pathname: "/", hash: "#contact" }}>
                 <Button variant="cta" size="sm" className="w-full">
                   Ingyenes ajánlat
                 </Button>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

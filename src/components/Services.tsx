@@ -1,6 +1,7 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import { 
   Home, 
   Shield, 
@@ -157,12 +158,12 @@ const Services = () => {
 
                 {/* CTA */}
                 <div className="pt-2">
-                  <a href="#contact">
+                  <Link to={{ pathname: "/", hash: "#contact" }}>
                     <Button variant="outline" size="sm" className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300">
                       Ajánlat kérése
                       <ArrowRight className="h-4 w-4 ml-2 group-hover:translate-x-1 transition-transform" />
                     </Button>
-                  </a>
+                  </Link>
                 </div>
               </CardContent>
             </Card>
@@ -185,12 +186,12 @@ const Services = () => {
                 💰 <strong>Korrekt árak</strong> - minden költséget előre megbeszélünk
               </p>
               <div className="flex flex-col sm:flex-row gap-6 justify-center animate-scale-in" style={{ animationDelay: '400ms' }}>
-                <a href="#contact">
+                <Link to={{ pathname: "/", hash: "#contact" }}>
                   <Button variant="outline" size="lg" className="bg-white/20 border-white/30 text-white hover:bg-white hover:text-primary transition-all duration-300 hover:scale-105 shadow-lg text-lg px-8 py-4">
                     🎯 Ingyenes Felmérés
                     <ArrowRight className="h-5 w-5 ml-2" />
                   </Button>
-                </a>
+                </Link>
                 <a href="tel:+36306616016">
                   <Button variant="outline" size="lg" className="bg-transparent border-white/30 text-white hover:bg-white hover:text-primary transition-all duration-300 hover:scale-105 text-lg px-8 py-4">
                     📞 Telefonos Egyeztetés

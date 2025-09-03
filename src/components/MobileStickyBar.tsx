@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Phone, MessageSquare, X } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const MobileStickyBar = () => {
   const [showCallback, setShowCallback] = useState(false);
@@ -22,7 +23,7 @@ const MobileStickyBar = () => {
             </Button>
           </a>
           
-          <a href="#contact" className="flex-1">
+          <Link to={{ pathname: "/", hash: "#contact" }} className="flex-1">
             <Button 
               variant="outline" 
               size="sm" 
@@ -31,7 +32,7 @@ const MobileStickyBar = () => {
               <MessageSquare className="h-4 w-4" />
               <span className="text-sm font-medium">Ajánlat</span>
             </Button>
-          </a>
+          </Link>
           
           <Button 
             variant="outline" 
