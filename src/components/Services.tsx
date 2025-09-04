@@ -22,64 +22,56 @@ const Services = () => {
       title: "Lakás és ház felújítás",
       description: "Teljes körű felújítási szolgáltatások lakások és házak számára, modern megoldásokkal és prémium anyagokkal.",
       features: ["Teljes körű tervezés", "Minőségi kivitelezés", "Határidő betartása"],
-      highlight: "Legnépszerűbb",
-      price: "Már 2.5M Ft-tól"
+      highlight: "Legnépszerűbb"
     },
     {
       icon: Shield,
       title: "Homlokzat szigetelés",
       description: "Energiahatékony homlokzat, aljzat és padlásszigetelés 15 év garanciával. Akár 50% energia megtakarítás!",
       features: ["Hőszigetelés", "Vízszigetelés", "Hangcsillapítás"],
-      highlight: "Energiahatékony",
-      price: "200 Ft/m²-től"
+      highlight: "Energiahatékony"
     },
     {
       icon: Paintbrush,
       title: "Festés, glettelés",
       description: "Professzionális festési és glettelési munkák prémium festékekkel. Színtanácsadással és tiszta munkavégzéssel.",
       features: ["Színtanácsadás", "Minőségi festékek", "Tiszta munkavégzés"],
-      highlight: "Gyors kivitelezés",
-      price: "1500 Ft/m²-től"
+      highlight: "Gyors kivitelezés"
     },
     {
       icon: Hammer,
       title: "Gipszkartonozás",
       description: "Modern gipszkarton rendszerek építése, álmennyezetek és válaszfalak tervezése és kivitelezése.",
       features: ["Gyors kivitelezés", "Precíz munka", "Dizájn megoldások"],
-      highlight: "Precíz munka",
-      price: "3500 Ft/m²-től"
+      highlight: "Precíz munka"
     },
     {
       icon: Wrench,
       title: "Kőműves munkák",
       description: "Professzionális falazás, burkolás és javítási munkák. Tapasztalt mestereink garantálják a tartós megoldásokat.",
       features: ["Tapasztalt mesterek", "Tartós megoldások", "Pontos kivitelezés"],
-      highlight: "Hagyományos technika",
-      price: "Egyedi árajánlat"
+      highlight: "Hagyományos technika"
     },
     {
       icon: DoorOpen,
       title: "Nyílászáró csere",
       description: "Energiahatékony ablakok és ajtók szakszerű beépítése. Akár 60% hőveszteség csökkentés garantáltan!",
       features: ["Energiahatékonyság", "Szakszerű beépítés", "Hosszú garancia"],
-      highlight: "60% energiamegtakarítás",
-      price: "45.000 Ft/db-tól"
+      highlight: "60% energiamegtakarítás"
     },
     {
       icon: Thermometer,
       title: "Hideg, meleg burkolás", 
       description: "Csempe, járólap és natural stone burkolóanyagok vízhatlan fektetése fürdőszobában és konyhában.",
       features: ["Vízhatlan kivitelezés", "Esztétikus megjelenés", "Hosszú élettartam"],
-      highlight: "Vízhatlan garancia",
-      price: "4500 Ft/m²-től"
+      highlight: "Vízhatlan garancia"
     },
     {
       icon: Building,
       title: "Könnyűszerkezetes építés",
       description: "Modern garázsok, filagóriák és melléképületek gyors és költséghatékony építése acélszerkezettel.",
       features: ["Gyors építés", "Költséghatékonyság", "Egyedi tervezés"],
-      highlight: "Gyors megoldás",
-      price: "350.000 Ft/db-tól"
+      highlight: "Gyors megoldás"
     }
   ];
 
@@ -111,7 +103,7 @@ const Services = () => {
         </div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mb-12 md:mb-16">
           {services.map((service, index) => (
             <Card 
               key={index} 
@@ -120,37 +112,33 @@ const Services = () => {
             >
               {/* Highlight Badge */}
               {service.highlight && (
-                <div className="absolute top-4 right-4 z-10">
+                <div className="absolute top-3 right-3 z-10">
                   <span className="bg-primary text-primary-foreground text-xs px-2 py-1 rounded-full font-semibold">
                     {service.highlight}
                   </span>
                 </div>
               )}
 
-              <CardHeader className="pb-4 relative">
-                <div className="mb-4">
-                  <div className="inline-flex items-center justify-center w-14 h-14 bg-primary/10 rounded-2xl group-hover:bg-gradient-primary group-hover:text-primary-foreground transition-all duration-500 group-hover:scale-110 group-hover:rotate-6 shadow-md group-hover:shadow-xl">
-                    <service.icon className="h-7 w-7 text-primary group-hover:text-primary-foreground transition-colors duration-300" />
+              <CardHeader className="pb-3 md:pb-4 relative p-4 md:p-6">
+                <div className="mb-3 md:mb-4">
+                  <div className="inline-flex items-center justify-center w-10 h-10 md:w-14 md:h-14 bg-primary/10 rounded-2xl group-hover:bg-gradient-primary group-hover:text-primary-foreground transition-all duration-500 group-hover:scale-110 group-hover:rotate-6 shadow-md group-hover:shadow-xl">
+                    <service.icon className="h-5 w-5 md:h-7 md:w-7 text-primary group-hover:text-primary-foreground transition-colors duration-300" />
                   </div>
                 </div>
-                <CardTitle className="text-lg font-bold text-foreground group-hover:text-primary transition-colors duration-300 leading-tight">
+                <CardTitle className="text-base md:text-lg font-bold text-foreground group-hover:text-primary transition-colors duration-300 leading-tight">
                   {service.title}
                 </CardTitle>
-                {/* Price */}
-                <div className="text-primary font-bold text-sm mt-2">
-                  {service.price}
-                </div>
               </CardHeader>
               
-              <CardContent className="pt-0">
-                <p className="text-muted-foreground mb-4 text-sm leading-relaxed">
+              <CardContent className="pt-0 p-4 md:p-6">
+                <p className="text-muted-foreground mb-3 md:mb-4 text-sm leading-relaxed">
                   {service.description}
                 </p>
                 
                 <ul className="space-y-2 mb-4">
                   {service.features.map((feature, featureIndex) => (
-                    <li key={featureIndex} className="flex items-center space-x-3 text-sm group">
-                      <CheckCircle className="w-4 h-4 text-primary flex-shrink-0 group-hover:scale-110 transition-transform duration-300" />
+                    <li key={featureIndex} className="flex items-center space-x-3 text-xs md:text-sm group">
+                      <CheckCircle className="w-3 h-3 md:w-4 md:h-4 text-primary flex-shrink-0 group-hover:scale-110 transition-transform duration-300" />
                       <span className="text-muted-foreground group-hover:text-foreground transition-colors duration-300">{feature}</span>
                     </li>
                   ))}
@@ -159,9 +147,9 @@ const Services = () => {
                 {/* CTA */}
                 <div className="pt-2">
                   <Link to={{ pathname: "/", hash: "#contact" }}>
-                    <Button variant="outline" size="sm" className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300">
+                    <Button variant="outline" size="sm" className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300 text-xs md:text-sm">
                       Ajánlat kérése
-                      <ArrowRight className="h-4 w-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                      <ArrowRight className="h-3 w-3 md:h-4 md:w-4 ml-2 group-hover:translate-x-1 transition-transform" />
                     </Button>
                   </Link>
                 </div>

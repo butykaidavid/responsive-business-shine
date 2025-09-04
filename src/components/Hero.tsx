@@ -19,28 +19,28 @@ const Hero = () => {
       <div className="absolute inset-0 bg-background/85"></div>
 
       <div className="container mx-auto px-4 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Left Column - Content */}
-          <div className="space-y-6 animate-fade-in-up">
+          <div className="space-y-4 md:space-y-6 animate-fade-in-up">
             {/* Trust Badges */}
-            <div className="flex flex-wrap gap-3 mb-2">
-              <Badge variant="outline" className="bg-primary/10 border-primary/20 text-primary px-4 py-2 hover:scale-105 transition-transform">
-                <Star className="h-4 w-4 mr-2 fill-current" />
+            <div className="flex flex-wrap gap-2 md:gap-3 mb-2">
+              <Badge variant="outline" className="bg-primary/10 border-primary/20 text-primary px-3 py-1 md:px-4 md:py-2 hover:scale-105 transition-transform text-xs md:text-sm">
+                <Star className="h-3 w-3 md:h-4 md:w-4 mr-1 md:mr-2 fill-current" />
                 5.0 ⭐ Értékelés
               </Badge>
-              <Badge variant="outline" className="bg-green-50 border-green-200 text-green-700 px-4 py-2 hover:scale-105 transition-transform">
-                <Shield className="h-4 w-4 mr-2" />
+              <Badge variant="outline" className="bg-green-50 border-green-200 text-green-700 px-3 py-1 md:px-4 md:py-2 hover:scale-105 transition-transform text-xs md:text-sm">
+                <Shield className="h-3 w-3 md:h-4 md:w-4 mr-1 md:mr-2" />
                 15+ Év Tapasztalat
               </Badge>
-              <Badge variant="outline" className="bg-blue-50 border-blue-200 text-blue-700 px-4 py-2 hover:scale-105 transition-transform">
-                <Users className="h-4 w-4 mr-2" />
+              <Badge variant="outline" className="bg-blue-50 border-blue-200 text-blue-700 px-3 py-1 md:px-4 md:py-2 hover:scale-105 transition-transform text-xs md:text-sm">
+                <Users className="h-3 w-3 md:h-4 md:w-4 mr-1 md:mr-2" />
                 200+ Ügyfél
               </Badge>
             </div>
 
             {/* Main Headline */}
-            <div className="mt-4 md:mt-6">
-              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-foreground mb-4 leading-tight">
+            <div className="mt-3 md:mt-4 lg:mt-6">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-foreground mb-3 md:mb-4 leading-tight">
                 <span className="bg-gradient-to-r from-primary via-primary-dark to-primary bg-clip-text text-transparent animate-gradient">
                   Álmai Otthona
                 </span>
@@ -49,9 +49,9 @@ const Hero = () => {
                   Vár Önre! 🏠✨
                 </span>
               </h1>
-              <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed max-w-2xl">
+              <p className="text-lg md:text-xl lg:text-2xl text-muted-foreground leading-relaxed max-w-2xl">
                 <strong className="text-primary">Professzionális építőipari szolgáltatások</strong> lakások és házak teljes körű felújításához.
-                <span className="block mt-3 text-lg">
+                <span className="block mt-2 md:mt-3 text-base md:text-lg">
                   🎯 <strong>Ingyenes felmérés</strong> • 
                   ⚡ <strong>Gyors kezdés</strong> • 
                   🏆 <strong>Garantált minőség</strong>
@@ -60,41 +60,41 @@ const Hero = () => {
             </div>
 
             {/* Key Benefits */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-6">
-              <div className="bg-white/70 backdrop-blur-sm rounded-xl p-4 border border-primary/10 hover:shadow-lg transition-all duration-300 hover:scale-105">
-                <Clock className="h-8 w-8 text-primary mb-2" />
-                <h3 className="font-bold text-sm text-foreground">Pontos Határidő</h3>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 md:gap-4 my-4 md:my-6">
+              <div className="bg-white/70 backdrop-blur-sm rounded-lg md:rounded-xl p-3 md:p-4 border border-primary/10 hover:shadow-lg transition-all duration-300 hover:scale-105">
+                <Clock className="h-6 w-6 md:h-8 md:w-8 text-primary mb-1 md:mb-2" />
+                <h3 className="font-bold text-xs md:text-sm text-foreground">Pontos Határidő</h3>
                 <p className="text-xs text-muted-foreground">Minden projektet időben</p>
               </div>
-              <div className="bg-white/70 backdrop-blur-sm rounded-xl p-4 border border-primary/10 hover:shadow-lg transition-all duration-300 hover:scale-105">
-                <Shield className="h-8 w-8 text-primary mb-2" />
-                <h3 className="font-bold text-sm text-foreground">Garancia</h3>
+              <div className="bg-white/70 backdrop-blur-sm rounded-lg md:rounded-xl p-3 md:p-4 border border-primary/10 hover:shadow-lg transition-all duration-300 hover:scale-105">
+                <Shield className="h-6 w-6 md:h-8 md:w-8 text-primary mb-1 md:mb-2" />
+                <h3 className="font-bold text-xs md:text-sm text-foreground">Garancia</h3>
                 <p className="text-xs text-muted-foreground">Hosszú távú védelem</p>
               </div>
-              <div className="bg-white/70 backdrop-blur-sm rounded-xl p-4 border border-primary/10 hover:shadow-lg transition-all duration-300 hover:scale-105">
-                <Star className="h-8 w-8 text-primary mb-2" />
-                <h3 className="font-bold text-sm text-foreground">Prémium Anyagok</h3>
+              <div className="bg-white/70 backdrop-blur-sm rounded-lg md:rounded-xl p-3 md:p-4 border border-primary/10 hover:shadow-lg transition-all duration-300 hover:scale-105">
+                <Star className="h-6 w-6 md:h-8 md:w-8 text-primary mb-1 md:mb-2" />
+                <h3 className="font-bold text-xs md:text-sm text-foreground">Prémium Anyagok</h3>
                 <p className="text-xs text-muted-foreground">Csak a legjobb minőség</p>
               </div>
             </div>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 pt-3">
+            <div className="flex flex-col sm:flex-row gap-3 md:gap-4 pt-2 md:pt-3">
               <Link to={{ pathname: "/", hash: "#contact" }}>
                 <Button 
                   variant="hero" 
                   size="lg" 
-                  className="group text-lg px-8 py-4 shadow-2xl hover:shadow-glow transition-all duration-500"
+                  className="group text-base md:text-lg px-6 md:px-8 py-3 md:py-4 shadow-2xl hover:shadow-glow transition-all duration-500 w-full sm:w-auto"
                 >
                   🎯 Ingyenes Felmérés
-                  <ArrowRight className="h-5 w-5 ml-2 group-hover:translate-x-1 transition-transform" />
+                  <ArrowRight className="h-4 w-4 md:h-5 md:w-5 ml-2 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </Link>
               <a href="tel:+36306616016">
                 <Button 
                   variant="outline" 
                   size="lg" 
-                  className="text-lg px-8 py-4 hover:scale-105 transition-all duration-300"
+                  className="text-base md:text-lg px-6 md:px-8 py-3 md:py-4 hover:scale-105 transition-all duration-300 w-full sm:w-auto"
                 >
                   📞 06 30/661 6016
                 </Button>

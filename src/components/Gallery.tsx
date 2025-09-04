@@ -139,7 +139,7 @@ const Gallery = () => {
         </div>
 
         {/* Projects Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8 mb-12 md:mb-16 lg:mb-20">
           {filteredProjects.map((project, index) => (
             <Card 
               key={project.id} 
@@ -150,48 +150,48 @@ const Gallery = () => {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-700 cursor-pointer"
+                  className="w-full h-48 md:h-56 object-cover group-hover:scale-110 transition-transform duration-700 cursor-pointer"
                   onClick={() => openImageModal(project)}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center">
-                  <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex space-x-4">
+                  <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex space-x-3 md:space-x-4">
                     <Button 
                       size="sm" 
                       variant="outline" 
-                      className="bg-white/20 border-white/30 text-white hover:bg-white hover:text-foreground backdrop-blur-sm"
+                      className="bg-white/20 border-white/30 text-white hover:bg-white hover:text-foreground backdrop-blur-sm p-2"
                       onClick={() => openImageModal(project)}
                     >
-                      <Eye className="h-4 w-4" />
+                      <Eye className="h-3 w-3 md:h-4 md:w-4" />
                     </Button>
                     <Button 
                       size="sm" 
                       variant="outline" 
-                      className="bg-white/20 border-white/30 text-white hover:bg-white hover:text-foreground backdrop-blur-sm"
+                      className="bg-white/20 border-white/30 text-white hover:bg-white hover:text-foreground backdrop-blur-sm p-2"
                       onClick={() => openImageModal(project)}
                     >
-                      <ExternalLink className="h-4 w-4" />
+                      <ExternalLink className="h-3 w-3 md:h-4 md:w-4" />
                     </Button>
                   </div>
                 </div>
                 
                 {/* Duration Badge */}
-                <div className="absolute top-4 right-4">
-                  <Badge variant="secondary" className="bg-primary/90 text-primary-foreground font-semibold">
+                <div className="absolute top-3 right-3">
+                  <Badge variant="secondary" className="bg-primary/90 text-primary-foreground font-semibold text-xs">
                     {project.duration}
                   </Badge>
                 </div>
               </div>
 
-              <CardContent className="p-6">
-                <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors">
+              <CardContent className="p-4 md:p-6">
+                <h3 className="text-lg md:text-xl font-bold text-foreground mb-2 md:mb-3 group-hover:text-primary transition-colors">
                   {project.title}
                 </h3>
-                <p className="text-muted-foreground mb-4 leading-relaxed">
+                <p className="text-muted-foreground mb-3 md:mb-4 leading-relaxed text-sm md:text-base">
                   {project.description}
                 </p>
                 
                 {/* Tags */}
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-1 md:gap-2">
                   {project.tags.map((tag, tagIndex) => (
                     <Badge 
                       key={tagIndex} 
