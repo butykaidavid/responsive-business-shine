@@ -114,13 +114,13 @@ const Gallery = () => {
       <div className="container mx-auto px-4 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16 animate-fade-in-up">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 bg-gradient-to-r from-primary via-primary-dark to-primary bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 bg-gradient-to-r from-primary via-primary-dark to-primary bg-clip-text text-transparent leading-tight pb-1">
             Befejezett Projektjeink
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Minden projekt egy történet. Tekintse meg, hogyan alakítjuk át az elképzeléseket 
-            valósággá a legmagasabb minőségi színvonalon. <span className="text-primary font-semibold">200+ elégedett ügyfél</span> 
-            már tapasztalta szakértelmünket.
+            valósággá a legmagasabb minőségi színvonalon. <span className="text-primary font-semibold">200+ elégedett ügyfél már</span> 
+            tapasztalta szakértelmünket.
           </p>
         </div>
 

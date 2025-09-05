@@ -98,12 +98,11 @@ const FAQ = () => {
       <div className="container mx-auto px-4 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16 animate-fade-in-up">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 bg-gradient-to-r from-primary via-primary-dark to-primary bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 bg-gradient-to-r from-primary via-primary-dark to-primary bg-clip-text text-transparent leading-tight pb-1">
             Gyakran Ismételt Kérdések
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            <strong className="text-primary">Minden kérdésre válaszolunk!</strong> 
-            Itt találja a leggyakoribb kérdéseket és válaszokat szolgáltatásainkkal kapcsolatban.
+            <strong className="text-primary">Minden kérdésre válaszolunk!</strong> Itt találja a leggyakoribb kérdéseket és válaszokat szolgáltatásainkkal kapcsolatban.
             <br />
             <span className="text-lg mt-2 block">
               💬 <strong>Gyors válaszok</strong> • 
