@@ -152,7 +152,7 @@ const Footer = () => {
                   href="https://codivo.hu" 
                   target="_blank" 
                   rel="noopener noreferrer" 
-                  className="font-light text-gray-300 hover:text-white transition-colors duration-200"
+                  className="font-light text-white-300 hover:text-gray transition-colors duration-200"
                 >
                               <h3 className="text-xl font-display font-light text-foreground mb-2">
               Codivo<span className="text-accent">{'}'}</span> Studio
