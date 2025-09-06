@@ -207,31 +207,3 @@ All colors MUST be HSL.
     background: hsl(var(--primary-dark));
   }
 }
-
-/* src/index.css */
-
-/* ... a fájl többi része ... */
-
-@keyframes gradient-wave {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-.animate-gradient-wave {
-  background: linear-gradient(90deg, #84fab0, #8fd3f4, #84fab0);
-  background-size: 200% 200%;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.group:hover .animate-gradient-wave {
-  animation: gradient-wave 3s ease infinite;
-}

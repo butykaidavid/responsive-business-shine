@@ -148,20 +148,20 @@ const Footer = () => {
     <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
   </svg>
   <span className="text-sm text-gray-400">by</span>
-  <a 
-    href="https://codivo.hu" 
-    target="_blank" 
-    rel="noopener noreferrer" 
-    className="
-      font-medium text-gray-300 
-      hover:bg-gradient-to-r hover:from-green-300 hover:via-blue-300 hover:to-green-300 
-      hover:bg-[length:200%_auto] hover:bg-clip-text hover:text-transparent 
-      hover:animate-gradient-wave 
-      transition-colors duration-300
-    "
-  >
-    co{`{`}div{`}`}o Studio
-  </a>
+<a
+  href="https://codivo.hu"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="
+    font-medium text-gray-300
+    bg-gradient-to-r from-green-300 via-blue-300 to-green-300
+    bg-[length:200%_auto] bg-clip-text
+    hover:text-transparent hover:animate-gradient-wave
+    duration-300
+  "
+>
+  Codivo{`}`} Studio
+</a>
 </div>
             </div>
             <div className="flex items-center space-x-6 text-sm text-gray-400">
