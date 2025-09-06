@@ -114,6 +114,10 @@ export default {
 				'3xl': '64px'
 			},
 			keyframes: {
+                'heartbeat': {
+                  '0%, 100%': { transform: 'scale(1)' },
+                  '50%': { transform: 'scale(1.15)' },
+                },
                 'gradient-wave': {
                   '0%, 100%': { backgroundPosition: '0% 50%' },
                   '50%': { backgroundPosition: '100% 50%' },
@@ -215,6 +219,7 @@ export default {
 				'scale-in': 'scale-in 0.3s ease-out',
 				'slide-up': 'slide-up 0.6s ease-out',
 				'float': 'float 3s ease-in-out infinite',
+                'heartbeat': 'heartbeat 1.5s ease-in-out infinite',
 				'pulse-glow': 'pulse-glow 2s ease-in-out infinite',
 				'shimmer': 'shimmer 2s linear infinite',
                 'gradient-wave': 'gradient-wave 3s ease infinite',
