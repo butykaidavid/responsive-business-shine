@@ -135,7 +135,7 @@ const Footer = () => {
             <div className="text-sm text-gray-400 text-center md:text-left">
               <p>© {currentYear} BauHub. Minden jog fenntartva.</p>
               <p className="mt-1">
-                Tartalmi hibák előfordulhatnak, az ebből okozott károkért felelősséget nem vállalunk.
+                Odafigyelésünk ellenére a weboldalon tartalmi hibák előfordulhatnak, az ebből okozott károkért felelősséget nem vállalunk.
               </p>
               <div className="mt-2 flex items-center justify-center space-x-1.5 md:justify-start">
                 <span className="text-sm text-gray-400">Made with</span>
