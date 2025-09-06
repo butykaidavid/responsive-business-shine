@@ -155,7 +155,7 @@ const Footer = () => {
                   className="
                     font-display font-light text-foreground
                   "
-                >
+                />
                   Codivo<span className="text-accent">{'}'}</span> Studio</span>
                 </a>
               </div>
