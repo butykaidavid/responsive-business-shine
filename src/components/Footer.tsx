@@ -138,7 +138,7 @@ const Footer = () => {
                 Tartalmi hibák előfordulhatnak, az ebből okozott károkért felelősséget nem vállalunk.
               </p>
               <p className="mt-1">
-                Készítette: <span className="text-primary font-medium">co{`{`}div{`}`}o / Studio - codivo.hu</span>
+                Készítette: <span className="text-primary font-medium"><a href="https://codivo.hu/">Codivo{`}`} Studio</a></span>
               </p>
             </div>
             <div className="flex items-center space-x-6 text-sm text-gray-400">
