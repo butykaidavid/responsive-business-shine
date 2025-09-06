@@ -10,7 +10,7 @@ const Hero = () => {
   return (
     <section 
       id="home" 
-      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-cover bg-center pt-24 sm:pt-28 md:pt-32 lg:pt-32 scroll-mt-24 md:scroll-mt-28"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-cover bg-center pt-12 sm:pt-16 md:pt-20 lg:pt-24 scroll-mt-24 md:scroll-mt-28"
       style={{ backgroundImage: `url(${heroBg})` }}
     >
       {/* Strong green gradient overlay to match original look */}
@@ -18,7 +18,7 @@ const Hero = () => {
       {/* Additional subtle overlay to let just a hint of background show */}
       <div className="absolute inset-0 bg-background/85"></div>
 
-      <div className="container mx-auto px-4 relative z-10">
+      <div className="container mx-auto px-4 relative z-10 mt-16">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Left Column - Content */}
           <div className="space-y-4 md:space-y-6 animate-fade-in-up">
