@@ -155,7 +155,7 @@ const Footer = () => {
                   className="font-light text-white-300 hover:text-gray transition-colors duration-200"
                 >
                               <h3 className="text-xl font-display font-light text-foreground mb-2">
-              Codivo<span className="text-accent">{'}'}</span> Studio
+              <style color="white">Codivo</style><span className="text-accent">{'}'}</span> Studio
             </h3>
                 </a>
               </div>
