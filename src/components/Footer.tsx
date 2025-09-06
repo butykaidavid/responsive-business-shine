@@ -137,32 +137,31 @@ const Footer = () => {
               <p className="mt-1">
                 Tartalmi hibák előfordulhatnak, az ebből okozott károkért felelősséget nem vállalunk.
               </p>
-<div className="mt-2 flex items-center justify-center space-x-1.5 md:justify-start">
-  <span className="text-sm text-gray-400">Made with</span>
-  <svg 
-    xmlns="http://www.w3.org/2000/svg" 
-    viewBox="0 0 24 24" 
-    fill="currentColor" 
-    className="h-5 w-5 text-red-500 transition-transform duration-300 hover:scale-110 drop-shadow-[0_1px_1px_rgba(0,0,0,0.3)]"
-  >
-    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
-  </svg>
-  <span className="text-sm text-gray-400">by</span>
-<a
-  href="https://codivo.hu"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="
-    font-medium text-gray-300
-    bg-gradient-to-r from-green-300 via-blue-300 to-green-300
-    [background-size:200%_auto] bg-clip-text
-    hover:text-transparent
-    hover:animate-gradient-wave
-  "
->
-  Codivo{`}`} Studio
-</a>
-</div>
+            <div className="mt-2 flex items-center justify-center space-x-1.5 md:justify-start">
+              <span className="text-sm text-gray-400">Made with</span>
+              <svg 
+                xmlns="http://www.w3.org/2000/svg" 
+                viewBox="0 0 24 24" 
+                fill="currentColor" 
+                className="h-5 w-5 text-red-500 transition-transform duration-300 hover:scale-110 drop-shadow-[0_1px_1px_rgba(0,0,0,0.3)]"
+              >
+                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+              </svg>
+              <span className="text-sm text-gray-400">by</span>
+              <a 
+                href="https://codivo.hu" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="
+                  font-medium text-gray-300
+                  bg-gradient-to-r from-green-300 via-blue-300 to-green-300
+                  [background-size:200%_auto] bg-clip-text
+                  hover:text-transparent hover:animate-gradient-wave
+                "
+              >
+                co{`{`}div{`}`}o Studio
+              </a>
+            </div>
             </div>
             <div className="flex items-center space-x-6 text-sm text-gray-400">
               <a href="#" className="hover:text-white transition-colors">Adatvédelem</a>
