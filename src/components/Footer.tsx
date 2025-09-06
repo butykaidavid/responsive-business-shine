@@ -154,7 +154,9 @@ const Footer = () => {
                   rel="noopener noreferrer" 
                   className="font-light text-gray-300 hover:text-white transition-colors duration-200"
                 >
-                  Codivo<span className="text-warning">{'}'}</span> Studio
+                              <h3 className="text-xl font-display font-light text-foreground mb-2">
+              Codivo<span className="text-accent">{'}'}</span> Studio
+            </h3>
                 </a>
               </div>
             </div>
