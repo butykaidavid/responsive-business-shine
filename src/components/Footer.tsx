@@ -153,10 +153,13 @@ const Footer = () => {
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="
-                    font-display font-light text-foreground
+                    font-medium
+                    bg-gradient-to-r from-green-300 via-blue-300 to-green-300
+                    [background-size:200%_auto] bg-clip-text text-transparent
+                    animate-gradient-wave
                   "
-                />
-                  Codivo<span className="text-accent">{'}'}</span> Studio</span>
+                >
+                  co{`{`}div{`}`}o Studio
                 </a>
               </div>
             </div>
