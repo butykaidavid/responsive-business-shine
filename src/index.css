@@ -206,6 +206,7 @@ All colors MUST be HSL.
   ::-webkit-scrollbar-thumb:hover {
     background: hsl(var(--primary-dark));
   }
+}
 
 /* src/index.css */
 
@@ -233,5 +234,4 @@ All colors MUST be HSL.
 
 .group:hover .animate-gradient-wave {
   animation: gradient-wave 3s ease infinite;
-}
 }
