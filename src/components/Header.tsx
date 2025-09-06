@@ -11,7 +11,7 @@ const Header = () => {
   const navItems = [
     { label: "Főoldal", href: "/", isRoute: true },
     { label: "Szolgáltatások", href: "/#services", isRoute: false },
-    { label: "Projektjeink", href: "/projektek", isRoute: true },
+    { label: "Projektjeink", href: "/", isRoute: true },
     { label: "Galéria", href: "/#gallery", isRoute: false },
     { label: "Blog", href: "/blog", isRoute: true },
     { label: "Kapcsolat", href: "/#contact", isRoute: false },
