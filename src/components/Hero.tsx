@@ -10,7 +10,7 @@ const Hero = () => {
   return (
     <section 
       id="home" 
-      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-cover bg-center pt-12 sm:pt-16 md:pt-20 lg:pt-24 scroll-mt-24 md:scroll-mt-28"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-cover bg-center pt-24 sm:pt-28 md:pt-32 lg:pt-32 scroll-mt-24 md:scroll-mt-28"
       style={{ backgroundImage: `url(${heroBg})` }}
     >
       {/* Strong green gradient overlay to match original look */}
