@@ -8,11 +8,11 @@ import heroBg from "@/assets/european-house-insulation.jpg";
 
 const Hero = () => {
   return (
-    <section 
-      id="home" 
-      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-cover bg-center pt-12 sm:pt-16 md:pt-20 lg:pt-24 scroll-mt-24 md:scroll-mt-28"
-      style={{ backgroundImage: `url(${heroBg})` }}
-    >
+<section 
+  id="home" 
+  className="relative overflow-hidden bg-cover bg-center scroll-mt-24 md:scroll-mt-28 pt-28 pb-16"
+  style={{ backgroundImage: `url(${heroBg})` }}
+>
       {/* Strong green gradient overlay to match original look */}
       <div className="absolute inset-0 bg-gradient-to-br from-background via-primary/5 to-background"></div>
       {/* Additional subtle overlay to let just a hint of background show */}
