@@ -155,9 +155,9 @@ const Footer = () => {
   className="
     font-medium text-gray-300
     bg-gradient-to-r from-green-300 via-blue-300 to-green-300
-    bg-[length:200%_auto] bg-clip-text
-    hover:text-transparent hover:animate-gradient-wave
-    duration-300
+    [background-size:200%_auto] bg-clip-text
+    hover:text-transparent
+    hover:animate-gradient-wave
   "
 >
   Codivo{`}`} Studio
