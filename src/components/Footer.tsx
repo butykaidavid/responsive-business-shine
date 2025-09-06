@@ -152,14 +152,9 @@ const Footer = () => {
                   href="https://codivo.hu" 
                   target="_blank" 
                   rel="noopener noreferrer" 
-                  className="
-                    font-medium
-                    bg-gradient-to-r from-green-300 via-blue-300 to-green-300
-                    [background-size:200%_auto] bg-clip-text text-transparent
-                    animate-gradient-wave
-                  "
+                  className="font-light text-gray-300 hover:text-white transition-colors duration-200"
                 >
-                  co{`{`}div{`}`}o Studio
+                  Codivo<span className="text-warning">{'{'}</span>div<span className="text-warning">{'}'}</span>o Studio
                 </a>
               </div>
             </div>
