@@ -19,7 +19,7 @@ const MobileStickyBar = () => {
               className="w-full flex items-center justify-center space-x-2 bg-primary hover:bg-primary-dark text-primary-foreground shadow-lg"
             >
               <Phone className="h-4 w-4" />
-              <span className="text-sm font-medium">Telefonhívás</span>
+              <span className="text-sm font-medium">Hívás</span>
             </Button>
           </a>
           
@@ -30,7 +30,7 @@ const MobileStickyBar = () => {
               className="w-full flex items-center justify-center space-x-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground"
             >
               <MessageSquare className="h-4 w-4" />
-              <span className="text-sm font-medium">E-mail</span>
+              <span className="text-sm font-medium">Email</span>
             </Button>
           </Link>
           
@@ -41,7 +41,7 @@ const MobileStickyBar = () => {
             className="w-full flex items-center justify-center space-x-2 border-secondary text-foreground hover:bg-secondary"
           >
             <Phone className="h-4 w-4" />
-            <span className="text-sm font-medium">Hívjanak fel</span>
+            <span className="text-sm font-medium">Visszahívás</span>
           </Button>
         </div>
       </div>
