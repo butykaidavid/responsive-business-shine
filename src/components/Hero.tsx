@@ -118,7 +118,7 @@ const Hero = () => {
           </div>
 
           {/* Right Column - Image */}
-          <div className="relative animate-fade-in-up" style={{ animationDelay: '300ms' }}>
+          <div className="relative mb-12 animate-fade-in-up" style={{ animationDelay: '300ms' }}>
             <div className="relative group">
               <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-primary-dark/20 rounded-3xl blur-2xl group-hover:blur-3xl transition-all duration-500 opacity-70"></div>
               <img
