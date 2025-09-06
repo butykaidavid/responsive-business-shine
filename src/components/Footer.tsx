@@ -152,17 +152,15 @@ const Footer = () => {
     href="https://codivo.hu" 
     target="_blank" 
     rel="noopener noreferrer" 
-    // ITT VAN A VÁLTOZÁS
-    className="font-medium text-gray-300 hover:text-white transition-colors flex items-center gap-1 group relative overflow-hidden" 
-    // Hozzáadtuk a group-ot a szülőnek, hogy a hover eseményt figyelhesse.
-    // Hozzáadtuk az overflow-hidden-t, hogy az animáció ne lógjon ki.
+    className="
+      font-medium text-gray-300 
+      hover:bg-gradient-to-r hover:from-green-300 hover:via-blue-300 hover:to-green-300 
+      hover:bg-[length:200%_auto] hover:bg-clip-text hover:text-transparent 
+      hover:animate-gradient-wave 
+      transition-colors duration-300
+    "
   >
-    <span className="relative z-10 transition-colors duration-300 group-hover:text-transparent">
-        co{`{`}div{`}`}o Studio
-    </span>
-    {/* Ez a span fogja tartalmazni az animált hátteret */}
-    <span className="absolute inset-0 z-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 animate-gradient-wave">
-    </span>
+    co{`{`}div{`}`}o Studio
   </a>
 </div>
             </div>

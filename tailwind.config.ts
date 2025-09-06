@@ -114,6 +114,10 @@ export default {
 				'3xl': '64px'
 			},
 			keyframes: {
+                'gradient-wave': {
+                  '0%, 100%': { backgroundPosition: '0% 50%' },
+                  '50%': { backgroundPosition: '100% 50%' },
+                },
 				'accordion-down': {
 					from: {
 						height: '0'
@@ -213,6 +217,7 @@ export default {
 				'float': 'float 3s ease-in-out infinite',
 				'pulse-glow': 'pulse-glow 2s ease-in-out infinite',
 				'shimmer': 'shimmer 2s linear infinite',
+                'gradient-wave': 'gradient-wave 3s ease infinite',
 				'wiggle': 'wiggle 1s ease-in-out infinite'
 			}
 		}
